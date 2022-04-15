@@ -8,5 +8,5 @@
 # git clone https://github.com/MN4WN1-777/ignew
 # cd ignew
 # git pull
-# python superIG.py
+# python mnawn.py
 
