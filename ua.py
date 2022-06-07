@@ -107,7 +107,7 @@ def ___menu___():
         ___roz = requests.get(f'https://i.instagram.com/api/v1/users/{open("Data/user.txt","r").read()}/info/', headers = {'user-agent': 'Mozilla/5.0 (Linux; Android 10; SM-G973F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.198 Mobile Safari/537.36 Instagram 166.1.0.42.245 Android (29/10; 420dpi; 1080x2042; samsung; SM-G973F; beyond1; exynos9820; en_GB; 256099204)', 'cookie': open('Data/coki.txt','r').read()}).json()['user']
         print(f"{T}╔════════════════════════════════════════════════════════════════════════════════════════╗")
         print(f"{T}║ [{Z}*{T}]{B} Welcome :{U} {___roz['full_name']}                                                                   {T}║")
-        print(f"{T}║ [{Z}*{T}]{B} User :{U} {___roz['username']}                                                                {T}║")
+        print(f"{T}║ [{Z}*{T}]{B} User :{U} {___roz['username']}                                                                 {T}║")
         print(f"{T}║ [{Z}*{T}]{B} Follower :{U} {___roz['follower_count']}                                                                     {T}║")
         print(f"{T}╚════════════════════════════════════════════════════════════════════════════════════════╝")
     except (IOError):
