@@ -123,14 +123,14 @@ def ___menu___():
     except (IOError):
         exit(f"{T}[{J}!{T}]{J} Connection Error")
     print(f"{T}╔════════════════════════════════════════════════════════════════════════════════════════╗")
-    print(f"{T}║                                            {T}║                                           {T}║")
+    print(f"{T}║                                           {T}║                                            {T}║")
     print(f"{T}║ {T}[{Z}1{T}]{B} Dump Username From {H}Following          {T}║  {T}[{Z}7{T}]{B} Dump Username From {U}Query              {T}║")
     print(f"{T}║ {T}[{Z}2{T}]{B} Dump Username From {U}Followers          {T}║  {T}[{Z}8{T}]{B} Dump User {U}From Email                  {T}║")
     print(f"{T}║ {T}[{Z}3{T}]{B} Dump Username From {U}Activity           {T}║  {T}[{Z}9{T}]{J} Start Crack {T}[{H}Fast{T}]{H}                    {T}║")
     print(f"{T}║ {T}[{Z}4{T}]{B} Dump Username From {U}Home               {T}║  {T}[{Z}0{T}]{B} List Total {A}Crack                      {T}║")
     print(f"{T}║ {T}[{Z}5{T}]{B} Dump Username From {U}Hashtag            {T}║  {T}[{Z}A{T}]{H} Log out {T}[{M}Exit{T}]{M}                        {T}║")
     print(f"{T}║ {T}[{Z}6{T}]{B} Dump Username From {U}Search             {T}║                                            {T}║")
-    print(f"{T}║                                            {T}║                                           {T}║")
+    print(f"{T}║                                           {T}║                                            {T}║")
     print(f"{T}╚════════════════════════════════════════════════════════════════════════════════════════╝")
     ___pilih = input(f"{T}║ {T}[{A}?{T}]{U} Choose {B}:{J} ")
     if ___pilih in ['1','01']:
