@@ -1,4 +1,4 @@
-# Kaya Akan igeh emak-emak
+# CRACK AKUN IG
 # PERINTAH
 # pkg update && pkg upgrade
 # pkg install python
