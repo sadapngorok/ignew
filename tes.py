@@ -152,7 +152,7 @@ def ___menu___():
     elif ___pilih in ['8','08']:
         ___email___()
     elif ___pilih in ['9','09']:
-        ___proxy___()
+        ___crack___()
     elif ___pilih in ['0','00']:
         try:
             print(f"{T}║ [{Z}1{T}]{H} Total Ok")
