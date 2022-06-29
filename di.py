@@ -400,7 +400,7 @@ class ___crack___:
         try:
             ___useragent = open('Data/ua.txt', 'r').read()
         except (IOError):
-           #___useragent = ('___useragent1,___useragent2,___useragent3,___useragent4,___useragent5,___useragent6,___useragent7,___useragent9,___useragent10,___useragent11,___useragent12,___useragent13,___useragent14,___useragent15,___useragent16').read()
+            ___useragent = random.choice()
             ___useragent1 = ('Mozilla/5.0 (Linux; Android 12; SAMSUNG SM-G998B) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/16.0 Chrome/92.0.4515.166 Mobile Safari/537.36')
             ___useragent2 = ('Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36')
             ___useragent3 = ('Mozilla/5.0 (Linux; Android 11; vivo 1904) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Mobile Safari/537.36')
