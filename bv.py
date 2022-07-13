@@ -42,6 +42,29 @@ ___logo___ = (f"""{H}
 {T}╚════════════════════════════════════════════════════════════════════════════════════════╝
 """)
 
+def xoshnaw(): 
+  uuid = str(os.geteuid()) + str(os.getlogin()) 
+  id = "-".join(uuid) 
+  print("\x1b[1;92m╚═➣ ID KAMU ADALAH\x1b[1;91m : "+id) 
+  try: 
+    httpCaht = requests.get("https://github.com/MN4WN1-777/ignew/blob/master/list.txt").text 
+    if id in httpCaht: 
+      print("\x1b[1;96m╚═➣ STATUS ID ANDA: AKTIF \033[1;92m[✔]") 
+      msg = str(os.geteuid()) 
+      time.sleep(0.3) 
+      pass 
+    else: 
+      print("\x1b[38;5;248m╚═➣ ID ANDA TIDAK AKTIF \x1b[1;91m[✘]") 
+      print("\x1b[38;5;208mSILAHKAN COPY ID ANDA KIRIM KE AUTHOR !!!") 
+      os.system('xdg-open https://wa.me/+6282277004825?text=BANG+SAYA+MAU+AKTIFIN+ID+SCRIPT+CRACK+INSTAGRAM+BANG') 
+      time.sleep(1) 
+      sys.exit() 
+  except: 
+    sys.exit() 
+    if name == '__main__': 
+     print(logo) 
+     xoshnaw() 
+xoshnaw()
 # Login Cookie
 def ___login___():
     os.system('clear')
