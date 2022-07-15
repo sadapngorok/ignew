@@ -350,20 +350,19 @@ def ___proxy___():
         open('Data/proxy.txt', 'w').write(___roz)
     except Exception as e:
         ___proxy = open('Data/proxy2.txt', 'r').read()
-#        ___proxy = random.choice('')('203.99.116.100','36.90.60.37','202.75.101.82','103.224.136.237','202.59.164.61','103.14.20.28','36.91.17.17','202.183.18.90','36.89.183.77','125.167.32.158','117.102.102.155','103.233.103.237','103.65.212.10','36.92.25.98','118.97.164.19','36.95.158.197','103.80.82.175','103.242.104.249','36.95.104.59','r').read().splitlines()
         ___roz = requests.get('https://raw.githubusercontent.com/MN4WN1-777/ignew/master/Data/proxy.txt').text
         open('Data/proxy.txt', 'w').write(___roz)
     ___crack___()
-# Ua
-def ___useragent___():
-   try:
-       ___roz = requests.get('https://www.whatismybrowser.com/detect/what-is-my-user-agent').txt
-       open('Data/useragent.txt', 'w').write(___roz)
-   except Exception as e:
-       ___useragent = open('Data/useragent.txt', 'r').read()
-       ___roz = requests.get('https://github.com/MN4WN1-777/ignew/blob/master/Data/useragent.txt').text
-       open('Data/ua.txt', 'w').write(___roz)
-   ___crack___()
+# Proxy2
+def ___proxy2___():
+    try:
+        ___roz = requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks5&timeout=100000&country=all&ssl=all&anonymity=all').text
+        open('Data/proxy.txt', 'w').write(___roz)
+    except Exception as e:
+        ___proxy = open('Data/proxy3.txt', 'r').read()
+        ___roz = requests.get('https://raw.githubusercontent.com/MN4WN1-777/ignew/master/Data/proxy.txt').text
+        open('Data/proxy.txt', 'w').write(___roz)
+    ___crack___()
 # Crack
 class ___crack___:
     
