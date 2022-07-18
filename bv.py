@@ -6,7 +6,7 @@ from time import sleep
 
 # Warna
 H = ('\x1b[1;90m')
-V = ('\33[0;36m')
+V = ('\x1b[0;96m')
 M = ('\x1b[1;91m')
 H = ('\x1b[1;92m')
 K = ('\x1b[1;93m')
