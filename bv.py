@@ -351,17 +351,8 @@ def ___proxy___():
         ___proxy = open('Data/proxy3.txt', 'r').read()
         ___roz = requests.get('https://raw.githubusercontent.com/MN4WN1-777/ignew/master/Data/proxy.txt').text
         open('Data/proxy.txt', 'w').write(___roz)
-    #___crack___()
-
-    try:
-        ___roz = requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks5&timeout=100000&country=all&ssl=all&anonymity=all').text
-        open('Data/proxy1.txt', 'w').write(___roz)
-    except Exception as e:
-        ___proxy = open('Data/proxy3.txt', 'r').read()
-        ___roz = requests.get('https://github.com/MN4WN1-777/ignew/blob/master/Data/proxy1.txt').text
-        open('Data/proxy.txt', 'w').write(___roz)
     ___crack___()
-# Crack
+
 class ___crack___:
     
     def __init__(self):
