@@ -4,41 +4,40 @@ from requests.exceptions import ConnectionError
 from time import sleep
 
 # Warna
-H = ('\x1b[1;90m')
-M = ('\x1b[1;91m')
-H = ('\x1b[1;92m')
-K = ('\x1b[1;93m')
-T = ('\x1b[1;94m')
-U = ('\x1b[1;95m')
-B = ('\x1b[1;96m')
-P = ('\x1b[1;97m')
-A = "\x1b[38;5;248m"
-J = "\x1b[38;5;208m"
-Z = "\x1b[0;90m"
+Z = "\x1b[0;90m"     # Hitam
+M = "\x1b[38;5;196m" # Merah
+H = "\x1b[38;5;46m"  # Hijau
+K = "\x1b[38;5;226m" # Kuning
+B = "\x1b[38;5;44m"  # Biru
+U = "\x1b[0;95m"     # Ungu
+O = "\x1b[0;96m"     # Biru Muda
+P = "\x1b[38;5;231m" # Putih
+J = "\x1b[38;5;208m" # Jingga
+A = "\x1b[38;5;248m" # Abu-Abu
 
 #LOGO
 ___logo___ = (f"""{H}
-{T}╔════════════════════════════════════════════════════════════════════════════════════════╗
-{T}║                                                                                        ║
-{T}║                                                                                        ║
-{T}║                                                                                        ║
-{T}║  {B}██╗███╗   ██╗███████╗████████╗ █████╗        ██████╗██████╗  █████╗  ██████╗██╗  ██╗  {T}║
-{T}║  {B}██║████╗  ██║██╔════╝╚══██╔══╝██╔══██╗      ██╔════╝██╔══██╗██╔══██╗██╔════╝██║ ██╔╝  {T}║
-{T}║  {B}██║██╔██╗ ██║███████╗   ██║   ███████║█████╗██║     ██████╔╝███████║██║     █████╔╝   {T}║
-{T}║  {U}██║██║╚██╗██║╚════██║   ██║   ██╔══██║╚════╝██║     ██╔══██╗██╔══██║██║     ██╔═██╗   {T}║
-{T}║  {U}██║██║ ╚████║███████║   ██║   ██║  ██║      ╚██████╗██║  ██║██║  ██║╚██████╗██║  ██╗  {T}║
-{T}║  {U}╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   ╚═╝  ╚═╝       ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝  {T}║
-{T}║                                                                                        {T}║
-{T}║                                                                        {A}VERSION{P}: {J}mokad  {T}║
-{T}║                                                                                        {T}║
-{T}╚════════════════════════════════════════════════════════════════════════════════════════╝
+{A}╔════════════════════════════════════════════════════════════════════════════════════════╗
+{A}║                                                                                        ║
+{A}║                                                                                        ║
+{A}║                                                                                        ║
+{A}║  {O}██╗{H}███╗   ██╗{K}███████╗{P}████████╗ {M}█████╗        {J}██████╗{U}██████╗  {H}█████╗  {O}██████╗{K}██╗  ██╗  {T}║
+{A}║  {O}██║{H}████╗  ██║{K}██╔════╝{P}╚══██╔══╝{M}██╔══██╗      {J}██╔════╝{U}██╔══██╗{H}██╔══██╗{O}██╔════╝{K}██║ ██╔╝  {T}║
+{A}║  {O}██║{H}██╔██╗ ██║{K}███████╗   {P}██║   {M}███████║{B}█████╗{J}██║     {U}██████╔╝{H}███████║{O}██║     {K}█████╔╝   {T}║
+{A}║  {O}██║{H}██║╚██╗██║{K}╚════██║   {P}██║   {M}██╔══██║{B}╚════╝{J}██║     {U}██╔══██╗{H}██╔══██║{O}██║     {K}██╔═██╗   {T}║
+{A}║  {O}██║{H}██║ ╚████║{K}███████║   {P}██║   {M}██║  ██║      {J}╚██████╗{U}██║  ██║{H}██║  ██║{O}╚██████╗{K}██║  ██╗  {T}║
+{A}║  {O}╚═╝{H}╚═╝  ╚═══╝{K}╚══════╝   {P}╚═╝   {M}╚═╝  ╚═╝       {J}╚═════╝{U}╚═╝  ╚═╝{H}╚═╝  ╚═╝ {O}╚═════╝{K}╚═╝  ╚═╝  {T}║
+{A}║                                                                                        {T}║
+{A}║                                                                        {A}VERSION{P}: {J}UNLIMITED-PRO  {T}║
+{A}║                                                                                        {T}║
+{A}╚════════════════════════════════════════════════════════════════════════════════════════╝
 
-{T}╔════════════════════════════════════════════════════════════════════════════════════════╗
-{T}║                            {A} MULTI BRUTEFORCE INSTAGRAM                                 {T}║
-{T}║                            {B} AUTHOR    {A}: {U}MN4WN-777                                      {T}║
-{T}║                            {B} Github    {A}: {U}github.com/MN4WN1-777                          {T}║
-{T}║                            {B} Facebook  {A}: {U}Zeuz Toktok                                    {T}║
-{T}╚════════════════════════════════════════════════════════════════════════════════════════╝
+{A}╔════════════════════════════════════════════════════════════════════════════════════════╗
+{A}║                            {J} MULTI BRUTEFORCE INSTAGRAM                                 {A}║
+{A}║                            {A} AUTHOR    {P}: {J}MN4WN-777                                      {A}║
+{A}║                            {A} Github    {P}: {J}github.com/MN4WN1-777                          {A}║
+{A}║                            {A} Facebook  {P}: {J}Zeuz Toktok                                    {A}║
+{A}╚════════════════════════════════════════════════════════════════════════════════════════╝
 """)
 
 def xoshnaw(): 
@@ -68,17 +67,17 @@ xoshnaw()
 def ___login___():
     os.system('clear')
     print(___logo___)
-    print(f"{T}╔════════════════════════════════════════════════════════════════════════════════════════╗")
-    print(f"{T}║                                                                                        {T}║")
-    print(f"{T}║ {A} [{H}❖{H}{A}] {B} GUNAKAN COOKIE AKUN TUMBAL INSTAGRAM ANDA {M}!!!                                    {T}║")
-    print(f"{T}║ {A} [{H}❖{H}{A}] {J} CARA AMBIL COOKIE KETIK [{H}OPEN{T}]{A}                                                   {T}║")
-    print(f"{T}║                                                                                        {T}║")
-    print(f"{T}╚════════════════════════════════════════════════════════════════════════════════════════╝")
-    ___cookie = input(f"{T}╚═➣{H} MASUKAN COOKIE :{A} ")
+    print(f"{A}╔════════════════════════════════════════════════════════════════════════════════════════╗")
+    print(f"{A}║                                                                                        {A}║")
+    print(f"{A}║ {A} [{H}❖{H}{A}] {J} GUNAKAN COOKIE AKUN TUMBAL INSTAGRAM ANDA {M}!!!                                    {A}║")
+    print(f"{A}║ {A} [{H}❖{H}{A}] {A} CARA AMBIL COOKIE KETIK {Z}[{H}OPEN{Z}]{A}                                                   {A}║")
+    print(f"{A}║                                                                                        {A}║")
+    print(f"{A}╚════════════════════════════════════════════════════════════════════════════════════════╝")
+    ___cookie = input(f"{A}╚═➣{H} MASUKAN COOKIE :{A} ")
     if ___cookie in ['open', 'Open', 'OPEN']:
-        print(f"{T}╚═➣{M} You will be directed to the creator of this program !!!");sleep(3);os.system('xdg-open https://wa.me/+6282277004825?text=Bg+Cara+Ambil+Cookies+Ig+Kek+Mana?');___login___()
+        print(f"{A}╚═➣{M} You will be directed to the creator of this program !!!");sleep(3);os.system('xdg-open https://wa.me/+6282277004825?text=Bg+Cara+Ambil+Cookies+Ig+Kek+Mana?');___login___()
     elif ___cookie in ['', ' ']:
-        exit(f"{T}[{Z}!{T}]{M} Do not Empty")
+        exit(f"{A}[{J}!{A}]{M} Do not Empty")
     else:
         try:
             ___userid = re.search('ds_user_id=(.*?);', ___cookie);open('Data/user.txt', 'w').write(___userid.group(1))
@@ -112,12 +111,12 @@ def ___menu___():
         os.system('clear')
         print(___logo___)
         ___roz = requests.get(f'https://i.instagram.com/api/v1/users/{open("Data/user.txt","r").read()}/info/', headers = {'user-agent': 'Mozilla/5.0 (Linux; Android 10; SM-G973F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.198 Mobile Safari/537.36 Instagram 166.1.0.42.245 Android (29/10; 420dpi; 1080x2042; samsung; SM-G973F; beyond1; exynos9820; en_GB; 256099204)', 'cookie': open('Data/coki.txt','r').read()}).json()['user']
-        print(f"{T}╔════════════════════════════════════════════════════════════════════════════════════════╗")
-        print(f"{T}║ [{Z}*{T}]{B} Welcome  :{U} {___roz['full_name']}                                                                  {T}║")
-        print(f"{T}║ [{Z}*{T}]{B} User     :{U} {___roz['username']}                                                              {T}║")
-        print(f"{T}║ [{Z}*{T}]{B} Follower :{U} {___roz['follower_count']}                                                                     {T}║")
-        print(f"{T}║ [{Z}*{T}]{B} Status   :{H} PREMIUM                                                                 {T}║")
-        print(f"{T}╚════════════════════════════════════════════════════════════════════════════════════════╝")
+        print(f"{A}╔════════════════════════════════════════════════════════════════════════════════════════╗")
+        print(f"{A}║ [{J}*{A}]{J} Welcome  {P}:{J} {___roz['full_name']}                                                                  {T}║")
+        print(f"{A}║ [{J}*{A}]{J} User     {P}:{J} {___roz['username']}                                                              {T}║")
+        print(f"{A}║ [{J}*{A}]{J} Follower {P}:{J} {___roz['follower_count']}                                                                     {T}║")
+        print(f"{A}║ [{J}*{A}]{J} Status   {P}:{H} PREMIUM                                                                 {T}║")
+        print(f"{A}╚════════════════════════════════════════════════════════════════════════════════════════╝")
     except (IOError):
         print(f"{T}╚═➣{M} COOKIE INVALID !!!");sleep(3);___login___()
     except (KeyError):
