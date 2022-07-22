@@ -340,7 +340,7 @@ class ___crack___:
         print(f"{A}║ [{J}2{A}]{J} Enter {A}Password {H}[{H}name, name123, name1234, name12345{A}]                                {A}║")
         print(f"{A}║ [{J}3{A}]{J} Enter {A}Password {H}[{J}name, name123, name1234, name12345, name123456{A}]                    {A}║")
         print(f"{A}║ [{J}4{A}]{J} Enter {A}Password {H}Manual{P}: {H}[ bismillah, katasandi, cantik123 {A}]               {A}║")
-       print(f"{A}║                                                                                    {A}║")
+        print(f"{A}║                                                                                         {A}║")
         print(f"{A}╚════════════════════════════════════════════════════════════════════════════════════════╝")
         ___pilih = input(f"{A}║ [{H}?{A}]{J} Choose :{H} ")
         if ___pilih in ['4','04']:
