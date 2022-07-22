@@ -101,7 +101,7 @@ def ___menu___():
     except (IOError):
         exit(f"{A}[{J}!{A}]{J} Connection Error")
     print(f"{A}╔════════════════════════════════════════════════════════════════════════════════════════╗")
-    print(f"{A}║                                           {J}║                                            {A}║")
+    print(f"{A}║                                           {A}║                                            {A}║")
     print(f"{A}║ {A}[{J}1{A}]{A} Dump Username From {H}Following          {A}║  {A}[{J}7{A}]{A} Dump Username From {H}Query              {A}║")
     print(f"{A}║ {A}[{J}2{A}]{A} Dump Username From {H}Followers          {A}║  {A}[{J}8{A}]{A} Dump User {H}From Email                  {A}║")
     print(f"{A}║ {A}[{J}3{A}]{A} Dump Username From {H}Activity           {A}║  {A}[{J}9{A}]{A} Start Crack {A}[{H}Fast{A}]{H}                    {A}║")
@@ -110,7 +110,7 @@ def ___menu___():
     print(f"{A}║ {A}[{J}6{A}]{A} Dump Username From {H}Search             {A}║                                            {A}║")
     print(f"{A}║                                           {A}║                                            {A}║")
     print(f"{A}╚════════════════════════════════════════════════════════════════════════════════════════╝")
-    ___pilih = input(f"{J}║ {A}[{H}?{A}]{H} Choose {P}:{J} ")
+    ___pilih = input(f"{A}║ {A}[{H}?{A}]{H} Choose {P}:{J} ")
     if ___pilih in ['1','01']:
         ___mengikuti___()
     elif ___pilih in ['2','02']:
@@ -336,13 +336,13 @@ class ___crack___:
         self.cp = []
         print(f"{A}╔════════════════════════════════════════════════════════════════════════════════════════╗")
         print(f"{A}║                                                                                        {A}║")
-        print(f"{A}║ [{J}1{A}]{J} Enter {A}Password {H}[{H}Name, Name123, Name12345{A}]                                          {A}║")
-        print(f"{A}║ [{J}2{A}]{J} Enter {A}Password {H}[{H}name, name123, name1234, name12345{A}]                                {A}║")
-        print(f"{A}║ [{J}3{A}]{J} Enter {A}Password {H}[{J}name, name123, name1234, name12345, name123456{A}]                    {A}║")
-        print(f"{A}║ [{J}4{A}]{J} Enter {A}Password {H}Manual{P}: {H}[ bismillah, katasandi, cantik123 {A}]               {A}║")
-        print(f"{A}║                                                                                         {A}║")
+        print(f"{A}║ [{J}1{A}]{J} Enter {A}Password {A}[{H}Name, Name123, Name12345{A}]                                          {A}║")
+        print(f"{A}║ [{J}2{A}]{J} Enter {A}Password {A}[{H}name, name123, name1234, name12345{A}]                                {A}║")
+        print(f"{A}║ [{J}3{A}]{J} Enter {A}Password {A}[{J}name, name123, name1234, name12345, name123456{A}]                    {A}║")
+        print(f"{A}║ [{J}4{A}]{J} Enter {A}Password {A}{H}Manual{P}: {A}[ {H}bismillah, katasandi, cantik123 {A}]                      {A}║")
+        print(f"{A}║                                                                                        {A}║")
         print(f"{A}╚════════════════════════════════════════════════════════════════════════════════════════╝")
-        ___pilih = input(f"{A}║ [{H}?{A}]{J} Choose :{H} ")
+        ___pilih = input(f"{A}║ [{H}?{A}]{H} Choose {P}:{H} ")
         if ___pilih in ['4','04']:
             pwx = input(f"{A}║ [{H}?{A}]{H} Password :{J} ").split(',')
         try:
