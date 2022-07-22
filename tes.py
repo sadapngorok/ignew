@@ -336,11 +336,11 @@ class ___crack___:
         self.cp = []
         print(f"{A}╔════════════════════════════════════════════════════════════════════════════════════════╗")
         print(f"{A}║                                                                                        {A}║")
-        print(f"{A}║ [{J}1{A}]{J} Enter {A}Password {A}[{H}Name, Name123, Name12345{A}]                                          {A}║")
-        print(f"{A}║ [{J}2{A}]{J} Enter {A}Password {A}[{H}name, name123, name1234, name12345{A}]                                {A}║")
-        print(f"{A}║ [{J}3{A}]{J} Enter {A}Password {A}[{J}name, name123, name1234, name12345, name123456{A}]                    {A}║")
+        print(f"{A}║ [{J}1{A}]{J} Enter {A}Password {A}[ {H}Name, Name123, Name12345 {A}]                                        {A}║")
+        print(f"{A}║ [{J}2{A}]{J} Enter {A}Password {A}[ {H}name, name123, name1234, name12345 {A}]                              {A}║")
+        print(f"{A}║ [{J}3{A}]{J} Enter {A}Password {A}[ {J}name, name123, name1234, name12345, name123456 {A}]                  {A}║")
         print(f"{A}║ [{J}4{A}]{J} Enter {A}Password {A}{H}Manual{P}: {A}[ {H}bismillah, katasandi, cantik123 {A}]                      {A}║")
-        print(f"{A}║                                                                                        {A}║")
+        print(f"{A}║                                                                                           {A}║")
         print(f"{A}╚════════════════════════════════════════════════════════════════════════════════════════╝")
         ___pilih = input(f"{A}║ [{H}?{A}]{H} Choose {P}:{H} ")
         if ___pilih in ['4','04']:
