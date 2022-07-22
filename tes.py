@@ -28,7 +28,7 @@ ___logo___ = (f"""{H}
 {A}║  {O}██║{H}██║ ╚████║{K}███████║   {P}██║   {M}██║  ██║      {J}╚██████╗{U}██║  ██║{H}██║  ██║{O}╚██████╗{K}██║  ██╗  {A}║
 {A}║  {O}╚═╝{H}╚═╝  ╚═══╝{K}╚══════╝   {P}╚═╝   {M}╚═╝  ╚═╝       {J}╚═════╝{U}╚═╝  ╚═╝{H}╚═╝  ╚═╝ {O}╚═════╝{K}╚═╝  ╚═╝  {A}║
 {A}║                                                                                        {A}║
-{A}║                                                                {A}VERSION{P}: {J}UNLIMITED{A}-{H}PRO  {A}║
+{A}║                                                                {A}VERSION{P}: {U}UNLIMITED{A}-{O}PRO  {A}║
 {A}║                                                                                        {A}║
 {A}╚════════════════════════════════════════════════════════════════════════════════════════╝
 
@@ -339,8 +339,8 @@ class ___crack___:
         print(f"{A}║ [{J}1{A}]{J} Enter {A}Password {A}[ {H}Name, Name123, Name12345 {A}]                                        {A}║")
         print(f"{A}║ [{J}2{A}]{J} Enter {A}Password {A}[ {H}name, name123, name1234, name12345 {A}]                              {A}║")
         print(f"{A}║ [{J}3{A}]{J} Enter {A}Password {A}[ {J}name, name123, name1234, name12345, name123456 {A}]                  {A}║")
-        print(f"{A}║ [{J}4{A}]{J} Enter {A}Password {A}{H}Manual{P}: {A}[ {H}bismillah, katasandi, cantik123 {A}]                        {A}║")
-        print(f"{A}║                                                                                         {A}║")
+        print(f"{A}║ [{J}4{A}]{J} Enter {A}Password {A}{H}Manual{P}: {A}[ {H}bismillah, katasandi, cantik123 {A}]                         {A}║")
+        print(f"{A}║                                                                                        {A}║")
         print(f"{A}╚════════════════════════════════════════════════════════════════════════════════════════╝")
         ___pilih = input(f"{A}║ [{H}?{A}]{H} Choose {P}:{J} ")
         if ___pilih in ['4','04']:
