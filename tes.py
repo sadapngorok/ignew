@@ -385,7 +385,7 @@ class ___crack___:
         try:
             print(f"\n{A}║ [{J}•{A}]{H} Total Ok Saved Di Results/Ok.txt")
             print(f"{A}║ [{J}•{A}]{J} Total Cp Saved Di Results/Cp.txt")
-            print(f"{A}║ [{J}•{A}]{M} JIKA TIDAK ADA HASIL HIDUPKAN MODE PESAWAT 10 DETIK {M}!!!\n")
+            print(f"{A}║ [{J}•{A}]{O} JIKA TIDAK ADA HASIL HIDUPKAN MODE PESAWAT 10 DETIK {M}!!!\n")
             with ThreadPoolExecutor(max_workers=30) as (___hayuk):
                 for ___user in self.___file:
                     username, nama = ___user.split('<=>')
