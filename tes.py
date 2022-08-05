@@ -408,10 +408,7 @@ class ___crack___:
         try:
             ___useragent = open('Data/ua.txt', 'r').read()
         except (IOError):
-            ___useragent = random.choice = ___roz('').text
-            ___useragent = ___roz('Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36')
-            ___useragent = ___roz('Mozilla/5.0 (Linux; Android 5.0.2; Redmi Note 3 Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Mobile Safari/537.36 Instagram 43.0.0.10.97 Android (21/5.0.2; 480dpi; 1080x1920; Xiaomi; Redmi Note 3; hennessy; mt6795; ru_RU; 105842053')
-            ___useragent = ___roz('Mozilla/5.0 (Linux; Android 9; Mi A3 Build/PKQ1.190416.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.111 Mobile Safari/537.36 Instagram 138.0.0.28.117 Android (28/9; 320dpi; 720x1411; Xiaomi; Mi A3; laurel_sprout; qcom; fr_FR; 210180521')
+            ___useragent = ('Mozilla/5.0 (Linux; Android 12; SM-S908U1 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.71 Mobile Safari/537.36 Instagram 244.1.0.19.110 Android (31/12; 420dpi; 1080x2241; samsung; SM-S908U1; b0q; qcom; en_US; 384108453')
         try:
             for pw in pwx:
                 pw = pw.lower()
