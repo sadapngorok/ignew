@@ -1,5 +1,6 @@
+Mozilla/5.0 (Linux; Android 5.0.2; Redmi Note 3 Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Mobile Safari/537.36 Instagram 43.0.0.10.97 Android (21/5.0.2; 480dpi; 1080x1920; Xiaomi; Redmi Note 3; hennessy; mt6795; ru_RU; 105842053
 Mozilla/5.0 (Linux; Android 4.4.2; Vodafone Smart Tab 3G Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 Instagram 139.0.0.33.121 Android (19/4.4.2; 160dpi; 540x912; Vodafone; Vodafone Smart Tab 3G; Vodafone_Smart_Tab_3G; mt8312; tr_TR; 211399328
-Instagram 198.0.0.32.120 Android (24/7.0; 480dpi; 1080x1920; LENOVO/Lenovo; Lenovo K53a48; K53a48; qcom; ru_RU; 307053317
+Mozilla/5.0 (Linux; Android 9; Mi A3 Build/PKQ1.190416.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.111 Mobile Safari/537.36 Instagram 138.0.0.28.117 Android (28/9; 320dpi; 720x1411; Xiaomi; Mi A3; laurel_sprout; qcom; fr_FR; 210180521
 Mozilla/5.0 (Series40; Nokia3030/14.60; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/5.0.0.0.31
 Mozilla/5.0 (Linux; Android 5.1.1; SM-J200H Build/LMY48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.138 Mobile Safari/537.36 Instagram 141.0.0.32.118 Android (22/5.1.1; 240dpi; 540x960; samsung; SM-J200H; j23g; sc8830; fr_FR; 214245288
 Mozilla/5.0 (Linux; Android 4.4.2; HUAWEI MediaPad T1 7.0 3G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 OPR/58.2.2878.53403
