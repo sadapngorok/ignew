@@ -418,7 +418,7 @@ class ___crack___:
             ___ua7 = ('Mozilla/5.0 (Linux; Android 9; Redmi 6A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36')
             ___ua8 = ('Mozilla/5.0 (Linux; Android 9; Redmi 6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36')
             ___ua9 = ('Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36')
-            ___roz = requests.get(open('Data/ua.txt','r').read().splitlines()))   
+            ___roz = requests.get(open('Data/ua.txt','r').read().splitlines())   
         try:
             for pw in pwx:
                 pw = pw.lower()
