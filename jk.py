@@ -406,8 +406,10 @@ class ___crack___:
         try:
             ___useragent = open('Data/ua.txt', 'r').read()
         except (IOError):
-            ___useragent = ('Mozilla/5.0 (Linux; Android 12; SO-53B Build/61.1.C.2.158; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.71 Mobile Safari/537.36 Instagram 244.1.0.19.110 Android (31/12; 420dpi; 1080x2394; Sony/docomo; SO-53B; SO-53B; qcom; ja_JP; 384108453)')
-            ___useragent = requests.get('Instagram 141.0.0.17.118 Android (29/10; 450dpi; 1080x2192; samsung; SM-G986U; y2q; qcom; en_US; 213368022)')
+            ___useragent = random.choice[___ua1][___ua2]
+            ___ua1 = ('Mozilla/5.0 (Linux; Android 12; SO-53B Build/61.1.C.2.158; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.71 Mobile Safari/537.36 Instagram 244.1.0.19.110 Android (31/12; 420dpi; 1080x2394; Sony/docomo; SO-53B; SO-53B; qcom; ja_JP; 384108453)')
+            ___ua2 = ('Mozilla/5.0 (Linux; Android 8.0.0; RNE-L21 Build/HUAWEIRNE-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/73.0.3683.90 Mobile Safari/537.36 Instagram 86.0.0.24.87 Android (26/8.0.0; 480dpi; 1080x2040; HUAWEI; RNE-L21; HWRNE; hi6250; ru_RU; 147375143)')
+            ___roz = requests.get('Instagram 141.0.0.17.118 Android (29/10; 450dpi; 1080x2192; samsung; SM-G986U; y2q; qcom; en_US; 213368022)')
         try:
             for pw in pwx:
                 pw = pw.lower()
