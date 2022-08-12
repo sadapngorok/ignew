@@ -39,37 +39,7 @@ ___logo___ = (f"""{H}
 {A}║                            {A} Facebook  {P}: {H}Zeuz Toktok                                    {A}║
 {A}╚════════════════════════════════════════════════════════════════════════════════════════╝
 """)                                                                                                         
-#Licensi
-___licensi___ = (f"""{H}
-{K}╦  {P}╦{M}╔═╗{J}╔═╗{O}╔╗╔{H}╔═╗{U}╦
-{K}║  {P}║{M}║  {J}║╣ {O}║║║{H}╚═╗{U}║
-{K}╩═╝{P}╩{M}╚═╝{J}╚═╝{O}╝╚╝{H}╚═╝{U}╩
-""")
-def xoshnaw():
-  os.system('clear')
-  print(___licensi___)
-  uuid = str(os.geteuid()) + str(os.getlogin())
-  id = "-".join(uuid)
-  print("\x1b[0;96m╚═➣ ID KAMU ADALAH\x1b[38;5;248m : "+id)
-  try:
-    httpCaht = requests.get("https://github.com/MN4WN1-777/ignew/blob/master/list.txt").text
-    if id in httpCaht:
-      print("\x1b[0;96m╚═➣ STATUS ID ANDA: AKTIF \x1b[38;5;46m[✔]")
-      msg = str(os.geteuid())
-      time.sleep(0.3)
-      pass
-    else:
-      print("\x1b[38;5;208m╚═➣ ID ANDA TIDAK AKTIF \x1b[38;5;196m[✘]")
-      print("\x1b[38;5;44mSILAHKAN COPY ID ANDA KIRIM KE \x1b[38;5;46mAUTHOR !!!")
-      os.system('xdg-open https://wa.me/+6282277004825?text=BANG+SAYA+MAU+AKTIFIN+ID+SCRIPT+CRACK+INSTAGRAM+BANG')
-      time.sleep(1)
-      sys.exit()
-  except:
-    sys.exit()
-    if name == '__main__':
-     print(logo)
-     xoshnaw()
-xoshnaw()
+
 # Login Cookie
 def ___login___():
     os.system('clear')
