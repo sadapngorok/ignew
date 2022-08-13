@@ -15,10 +15,11 @@
        $ pip install bs4
              
 <h3 align="left">Cara Menjalankan Script:</h3>
-
-       $ cd 
+       
+       $ git clone https://github.com/MN4WN1-777/ignew
+       $ cd ignew
        $ git pull
-       $ python
+       $ python mnawn.py
 
 <h3 align="left">Connect with me:</h3>
 
