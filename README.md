@@ -20,7 +20,6 @@
        $ git pull
        $ python
 
-
 <h3 align="left">Connect with me:</h3>
 
 [![](https://img.shields.io/badge/Github-black?logo=Github&logoColor=black&labelColor=white)](https://github.com/MN4WN1-777)[![](https://img.shields.io/badge/Facebook-blue?logo=Facebook&logoColor=blue&labelColor=white)](https://www.facebook.com/kemas.rifki.75)
