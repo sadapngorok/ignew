@@ -132,8 +132,8 @@ def ___menu___():
         exit(f"{A}[{J}!{A}]{J} Connection Error")
     print(f"{A}╔════════════════════════════════════════════════════════════════════════════════════════╗")
     print(f"{A}║                                           {A}║                                            {A}║")
-    print(f"{A}║ {A}[{J}1{A}]{A} Dump Username From {H}Following          {A}║  {A}[{J}7{A}]{A} Dump Username From {H}Query              {A}║")
-    print(f"{A}║ {A}[{J}2{A}]{A} Dump Username From {H}Followers          {A}║  {A}[{J}8{A}]{A} Dump User {H}From Email                  {A}║")
+    print(f"{A}║ {A}[{J}1{A}]{A} Dump Username From {H}Mengikuti          {A}║  {A}[{J}7{A}]{A} Dump Username From {H}Query              {A}║")
+    print(f"{A}║ {A}[{J}2{A}]{A} Dump Username From {H}Pengikut           {A}║  {A}[{J}8{A}]{A} Dump User {H}From Email                  {A}║")
     print(f"{A}║ {A}[{J}3{A}]{A} Dump Username From {H}Activity           {A}║  {A}[{J}9{A}]{A} Start Crack {A}[{H}Fast{A}]{H}                    {A}║")
     print(f"{A}║ {A}[{J}4{A}]{A} Dump Username From {H}Home               {A}║  {A}[{J}0{A}]{A} List Total {A}Crack                      {A}║")
     print(f"{A}║ {A}[{J}5{A}]{A} Dump Username From {H}Hashtag            {A}║  {A}[{J}A{A}]{A} Log out {A}[{M}Exit{A}]{M}                        {A}║")
@@ -194,7 +194,7 @@ def ___mengikuti___():
                 open('Dump/'+___file, 'a').write(z['username']+'<=>'+z['full_name']+'\n')
                 print(f"{A}{z['username']}<=>{z['full_name']}")
             print(f"\n{A}[{J}*{A}]{H} Finished...")
-            print(f"{A}[{H}?{A}]{J} File Saved In :{H} Dump/{___file}")
+            print(f"{A}[{H}?{A}]{J} Salin Hasil Dump ini :{H} Dump/{___file}")
             input(f"{A}[{J}Return{A}]{H}");___menu___()
     except (KeyError):
         print(f"{A}[{M}!{A}]{M} Dump Fail");sleep(2);___menu___()
@@ -216,7 +216,7 @@ def ___pengikut___():
                 open('Dump/'+___file, 'a').write(z['username']+'<=>'+z['full_name']+'\n')
                 print(f"{A}{z['username']}<=>{z['full_name']}")
             print(f"\n{A}[{J}*{A}]{H} Finished...")
-            print(f"{A}[{H}?{A}]{J} File Saved in :{H} Dump/{___file}")
+            print(f"{A}[{H}?{A}]{J} Salin Hasil Dump ini :{H} Dump/{___file}")
             input(f"{A}[{J}Return{A}]{H}");___menu___()
     except (KeyError):
         exit(f"{A}[{M}!{A}]{M} Dump Failed")
