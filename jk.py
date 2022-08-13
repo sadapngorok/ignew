@@ -181,7 +181,7 @@ def ___menu___():
 # Dump Mengikuti
 def ___mengikuti___():
     try:
-        ___user = input(f"{A}║ [{H}?{A}]{J} User :{H} ")
+        ___user = input(f"{A}║ [{H}?{A}]{J} Username :{H} ")
         if ___user[:1] in ['1','2','3','4','5','6','7','8','9','0']:
             exit(f"{A}[{M}!{A}]{M} use Username")
         else:
@@ -203,7 +203,7 @@ def ___mengikuti___():
 # Dump Pengikut
 def ___pengikut___():
     try:
-        ___user = input(f"\n{A}[{H}?{A}]{J} User :{H} ")
+        ___user = input(f"\n{A}[{H}?{A}]{J} Username :{H} ")
         if ___user[:1] in ['1','2','3','4','5','6','7','8','9','0']:
             exit(f"{A}[{M}!{A}]{M} use Username")
         else:
@@ -407,7 +407,7 @@ class ___crack___:
             ___useragent = open('Data/ua.txt', 'r').read()
         except (IOError):
             ___useragent = ('Instagram 141.0.0.17.118 Android (29/10; 450dpi; 1080x2192; samsung; SM-G986U; y2q; qcom; en_US; 213368022)')
-            requests.get = ('Mozilla/5.0 (Linux; Android 8.1.0; DUB-LX1 Build/HUAWEIDUB-LX1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.106 Mobile Safari/537.36 Instagram 147.0.0.42.124 Android (27/8.1.0; 320dpi; 720x1440; HUAWEI; DUB-LX1; HWDUB-Q; qcom; en_US; 225283631)')
+            ___roz = requests.get('Instagram 136.0.0.34.124 Android (25/6.0; 356dpi; 720x1280; samsung; SM-G930F; herolte; samsungexynos8890; ru_RU; 208061712)')
         try:
             for pw in pwx:
                 pw = pw.lower()
