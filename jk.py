@@ -406,10 +406,12 @@ class ___crack___:
         try:
             ___useragent = open('Data/ua.txt', 'r').read()
         except (IOError):
-            ___useragent = random.choice[___ua1][___ua2][___ua3]
-            ___ua1 = ('Mozilla/5.0 (Linux; Android 9; COL-L29 Build/HUAWEICOL-L29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/76.0.3809.132 Mobile Safari/537.36 Instagram 110.0.0.16.119 Android (28/9; 480dpi; 1080x2060; HUAWEI/HONOR; COL-L29; HWCOL; kirin970')
-            ___ua2 = ('Mozilla/5.0 (Android 12; Mobile; rv:68.0) Gecko/68.0 Firefox/103.0')
-            ___ua3 = ('Mozilla/5.0 (Android 12; Mobile; LG-M255; rv:103.0) Gecko/103.0 Firefox/103.0')
+            ___useragent = random.choice[___ua1][___ua2][___ua3][___ua4][___ua5]
+            ___ua1 = ('Mozilla/5.0 (Linux; Android 5.1.1; G011A Build/LMY48Z) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36 Instagram 199.1.0.34.119 Android (22/5.1.1; 320dpi; 720x1280; google; G011A; G011A; qcom; pt_BR; 308633534)')
+            ___ua2 = ('Mozilla/5.0 (Linux; Android 9; COL-L29 Build/HUAWEICOL-L29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/76.0.3809.132 Mobile Safari/537.36 Instagram 110.0.0.16.119 Android (28/9; 480dpi; 1080x2060; HUAWEI/HONOR; COL-L29; HWCOL; kirin970')
+            ___ua3 = ('Mozilla/5.0 (Android 12; Mobile; rv:68.0) Gecko/68.0 Firefox/103.0')
+            ___ua4 = ('Mozilla/5.0 (Android 12; Mobile; LG-M255; rv:103.0) Gecko/103.0 Firefox/103.0')
+            ___ua5 = ('Mozilla/5.0 (Linux; Android 6.0.1; SM-G935T Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/51.0.2704.81 Mobile Safari/537.36 Instagram 8.4.0 Android (23/6.0.1; 560dpi; 1440x2560; samsung; SM-G935T; hero2qltetmo; qcom; en_US')
             ___roz = requests.get('Instagram 141.0.0.17.118 Android (29/10; 450dpi; 1080x2192; samsung; SM-G986U; y2q; qcom; en_US; 213368022)')
         try:
             for pw in pwx:
