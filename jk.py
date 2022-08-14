@@ -119,8 +119,8 @@ def ___menu___():
         print(___logo___)
         ___roz = requests.get(f'https://i.instagram.com/api/v1/users/{open("Data/user.txt","r").read()}/info/', headers = {'user-agent': 'Mozilla/5.0 (Linux; Android 10; SM-G973F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.198 Mobile Safari/537.36 Instagram 166.1.0.42.245 Android (29/10; 420dpi; 1080x2042; samsung; SM-G973F; beyond1; exynos9820; en_GB; 256099204)', 'cookie': open('Data/coki.txt','r').read()}).json()['user']
         print(f"{A}╔════════════════════════════════════════════════════════════════════════════════════════╗")
-        print(f"{A}║ [{J}*{A}]{J} Welcome  {P}:{J} {___roz['full_name']}                                                 {A}║")
-        print(f"{A}║ [{J}*{A}]{J} User     {P}:{J} {___roz['username']}                                                        {A}║")
+        print(f"{A}║ [{J}*{A}]{J} Welcome  {P}:{J} {___roz['full_name']}                                                               {A}║")
+        print(f"{A}║ [{J}*{A}]{J} User     {P}:{J} {___roz['username']}                                                            {A}║")
         print(f"{A}║ [{J}*{A}]{J} Follower {P}:{J} {___roz['follower_count']}                                                                      {A}║")
         print(f"{A}║ [{J}*{A}]{J} Status   {P}:{H} PREMIUM                                                                 {A}║")
         print(f"{A}╚════════════════════════════════════════════════════════════════════════════════════════╝")
@@ -406,7 +406,7 @@ class ___crack___:
         try:
             ___useragent = open('Data/ua.txt', 'r').read()
         except (IOError):
-            ___useragent = random.choice(open("Data/ua2.txt","r").read().splitlines())
+            ___useragent = ('Instagram 136.0.0.34.124 Android (25/6.0; 356dpi; 720x1280; samsung; SM-G930F; herolte; samsungexynos8890; ru_RU; 208061712)')
         try:
             for pw in pwx:
                 pw = pw.lower()
