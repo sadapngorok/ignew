@@ -406,7 +406,7 @@ class ___crack___:
         try:
             ___useragent = open('Data/ua.txt', 'r').read()
         except (IOError):
-            ___useragent = ('Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36')
+            ___useragent = ('Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Mobile Safari/537.36')
         try:
             for pw in pwx:
                 pw = pw.lower()
