@@ -163,7 +163,7 @@ def ___menu___():
         try:
             print(f"{A}║ [{J}1{A}]{H} Total Ok")
             print(f"{A}║ [{J}2{A}]{J} Total Cp")
-            print(f"{A}║ [{J}3{A}]{M} Return")
+            print(f"{A}║ [{J}3{A}]{K} Kembali")
             ___hasil = input(f"{A}║ [{H}?{A}]{J} Choose :{H} ")
             if ___hasil in ['1','01']:
                 print(f"{H} ");os.system('cat Results/Ok.txt')
@@ -183,7 +183,7 @@ def ___mengikuti___():
     try:
         ___user = input(f"{A}║ [{H}?{A}]{J} Username :{H} ")
         if ___user[:1] in ['1','2','3','4','5','6','7','8','9','0']:
-            exit(f"{A}[{M}!{A}]{M} use Username")
+            exit(f"{A}[{M}!{A}]{M}Username Salah")
         else:
             ___roz = requests.get(f'https://z-p42.www.instagram.com/{___user}/?__a=1', headers = {'user-agent': 'Mozilla/5.0 (Linux; Android 10; SM-G973F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.198 Mobile Safari/537.36 Instagram 166.1.0.42.245 Android (29/10; 420dpi; 1080x2042; samsung; SM-G973F; beyond1; exynos9820; en_GB; 256099204)', 'cookie': open('Data/coki.txt','r').read()}).json()['graphql']['user']
             print(f"{A}║ [{H}✔{A}]{J} Name :{H} {___roz['full_name']}\n")
@@ -195,7 +195,7 @@ def ___mengikuti___():
                 print(f"{A}{z['username']}<=>{z['full_name']}")
             print(f"\n{A}[{J}*{A}]{H} Finished...")
             print(f"{A}[{H}?{A}]{J} Salin Hasil Dump ini :{H} Dump/{___file}")
-            input(f"{A}[{J}Return{A}]{H}");___menu___()
+            input(f"{A}[{K}Kembali{A}]{H}");___menu___()
     except (KeyError):
         print(f"{A}[{M}!{A}]{M} Dump Fail");sleep(2);___menu___()
     except (ConnectionError):
@@ -205,7 +205,7 @@ def ___pengikut___():
     try:
         ___user = input(f"\n{A}[{H}?{A}]{J} Username :{H} ")
         if ___user[:1] in ['1','2','3','4','5','6','7','8','9','0']:
-            exit(f"{A}[{M}!{A}]{M} use Username")
+            exit(f"{A}[{M}!{A}]{M}Username Salah")
         else:
             ___roz = requests.get(f'https://z-p42.www.instagram.com/{___user}/?__a=1', headers = {'user-agent': 'Mozilla/5.0 (Linux; Android 10; SM-G973F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.198 Mobile Safari/537.36 Instagram 166.1.0.42.245 Android (29/10; 420dpi; 1080x2042; samsung; SM-G973F; beyond1; exynos9820; en_GB; 256099204)', 'cookie': open('Data/coki.txt','r').read()}).json()['graphql']['user']
             print(f"{A}[{H}?{A}]{J} Name :{H} {___roz['full_name']}\n")
@@ -217,7 +217,7 @@ def ___pengikut___():
                 print(f"{A}{z['username']}<=>{z['full_name']}")
             print(f"\n{A}[{J}*{A}]{H} Finished...")
             print(f"{A}[{H}?{A}]{J} Salin Hasil Dump ini :{H} Dump/{___file}")
-            input(f"{A}[{J}Return{A}]{H}");___menu___()
+            input(f"{A}[{K}Kembali{A}]{H}");___menu___()
     except (KeyError):
         exit(f"{A}[{M}!{A}]{M} Dump Failed")
     except (ConnectionError):
@@ -237,7 +237,7 @@ def ___activity___():
                 print(f"{z[0]}<=>{z[1]}")
             print(f"\n{A}[{J}*{A}]{H} Finisehd...")
             print(f"{A}[{H}?{A}]{B} File Saved in :{U} Dump/{___file}")
-            input(f"{A}[{J}Return{A}]{H}");___menu___()
+            input(f"{A}[{K}Kembali{A}]{H}");___menu___()
     except Exception as e:
         exit(f"{A}[{M}!{A}]{M} {e}")
 # Dump Beranda
@@ -254,7 +254,7 @@ def ___beranda___():
                 print(f"{z['user']['username']}<=>{z['user']['full_name']}")
             print(f"\n{A}[{J}*{A}]{H} Finished...")
             print(f"{A}[{H}?{A}]{J} File Saved In :{H} Dump/{___file}")
-            input(f"{A}[{J}Return{A}]{H}");___menu___()
+            input(f"{A}[{K}Kembali{A}]{H}");___menu___()
     except (KeyError):
         exit(f"{A}[{M}!{A}]{M} Dump Failed")
     except (ConnectionError):
@@ -277,7 +277,7 @@ def ___hastag___():
                 print(f"{z[0]}<=>{z[1]}")
             print(f"\n{A}[{J}*{A}]{H} Finished...")
             print(f"{A}[{H}?{A}]{J} File Saved In :{H} Dump/{___file}")
-            input(f"{A}[{J}Return{A}]{H}");___menu___()
+            input(f"{A}[{K}Kembali{A}]{H}");___menu___()
     except Exception as e:
         exit(f"{A}[{M}!{A}]{J} {e}")
 # Dump Search
@@ -285,7 +285,7 @@ def ___search___():
     try:
         ___user = input(f"\n{A}[{H}?{A}]{J} User :{H} ")
         if ___user[:1] in ['1','2','3','4','5','6','7','8','9','0']:
-            exit(f"{A}[{M}!{A}]{M} Use Username")
+            exit(f"{A}[{M}!{A}]{M}Username Salah")
         else:
             ___roz = requests.get(f'https://z-p42.www.instagram.com/{___user}/?__a=1', headers = {'user-agent': 'Mozilla/5.0 (Linux; Android 10; SM-G973F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.198 Mobile Safari/537.36 Instagram 166.1.0.42.245 Android (29/10; 420dpi; 1080x2042; samsung; SM-G973F; beyond1; exynos9820; en_GB; 256099204)', 'cookie': open('Data/coki.txt','r').read()}).json()['graphql']['user']
             print(f"{A}[{H}?{A}]{B} Name :{H} {___roz['full_name']}\n")
@@ -297,7 +297,7 @@ def ___search___():
                 print(f"{P}{z['username']}<=>{z['full_name']}")
             print(f"\n{A}[{J}*{A}]{H} Finished...")
             print(f"{A}[{H}?{A}]{J} File Saved In :{H} Dump/{___file}")
-            input(f"{A}[{J}Return{A}]{H}");___menu___()
+            input(f"{A}[{K}Kembali{A}]{H}");___menu___()
     except (KeyError):
         exit(f"{A}[{M}!{A}]{M} Dump Failed")
     except (ConnectionError):
@@ -317,7 +317,7 @@ def ___query___():
                 print(f"{z['user']['username']}<=>{z['user']['full_name']}")
             print(f"\n{A}[{J}*{A}]{H} Finished...")
             print(f"{A}[{H}?{A}]{J} File Saved in :{H} Dump/{___file}")
-            input(f"{A}[{J}Return{A}]{H}");___menu___()
+            input(f"{A}[{J}Kembali{A}]{H}");___menu___()
     except (KeyError):
         exit(f"{A}[{M}!{A}]{M} Dump Failed")
     except (ConnectionError):
@@ -343,7 +343,7 @@ def ___email___():
                     print(f"{___user}")
                 print(f"\n{A}[{J}*{A}]{H} Finished...")
                 print(f"{A}[{H}?{A}]{J} File Saved in :{H} {___file}")
-                input(f"{A}[{J}Return{A}]{H}");___menu___()
+                input(f"{A}[{K}Kembali{A}]{H}");___menu___()
         else:
             exit(f"{A}[{M}!{A}]{H} Domain '@gmail.com','@yahoo.com','@hotmail.com','@email.com','@mail.com','@outlook.com','@yandex.com'")
     except Exception as e:
