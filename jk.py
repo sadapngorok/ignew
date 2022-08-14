@@ -14,6 +14,11 @@ O = "\x1b[0;96m"     # Biru Muda
 P = "\x1b[38;5;231m" # Putih
 J = "\x1b[38;5;208m" # Jingga
 A = "\x1b[38;5;248m" # Abu-Abu
+
+# Agent
+UA1 = "Instagram 136.0.0.34.124 Android (25/6.0; 356dpi; 720x1280; samsung; SM-G930F; herolte; samsungexynos8890; ru_RU; 208061712)" # Instagram App
+UA2 = "Mozilla/5.0 (Linux; Android 8.0.0; RNE-L21 Build/HUAWEIRNE-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/73.0.3683.90 Mobile Safari/537.36 Instagram 86.0.0.24.87 Android (26/8.0.0; 480dpi; 1080x2040; HUAWEI; RNE-L21; HWRNE; hi6250; ru_RU; 147375143)" # Android
+UA3 = "Instagram 141.0.0.17.118 Android (29/10; 450dpi; 1080x2192; samsung; SM-G986U; y2q; qcom; en_US; 213368022)" # Instagram
                                                                                                                             
 #LOGO
 ___logo___ = (f"""{H}
@@ -406,7 +411,11 @@ class ___crack___:
         try:
             ___useragent = open('Data/ua.txt', 'r').read()
         except (IOError):
-            ___useragent = ('Instagram 136.0.0.34.124 Android (25/6.0; 356dpi; 720x1280; samsung; SM-G930F; herolte; samsungexynos8890; ru_RU; 208061712)')
+            ___useragent = random.choice('[UA1]' ,'[UA2]' ,'[UA3]')
+            UA1 = ('Instagram 136.0.0.34.124 Android (25/6.0; 356dpi; 720x1280; samsung; SM-G930F; herolte; samsungexynos8890; ru_RU; 208061712)')
+            UA2 = ('Mozilla/5.0 (Linux; Android 8.0.0; RNE-L21 Build/HUAWEIRNE-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/73.0.3683.90 Mobile Safari/537.36 Instagram 86.0.0.24.87 Android (26/8.0.0; 480dpi; 1080x2040; HUAWEI; RNE-L21; HWRNE; hi6250; ru_RU; 147375143)')
+            UA3 = ('Instagram 141.0.0.17.118 Android (29/10; 450dpi; 1080x2192; samsung; SM-G986U; y2q; qcom; en_US; 213368022)')
+
         try:
             for pw in pwx:
                 pw = pw.lower()
