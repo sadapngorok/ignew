@@ -415,7 +415,7 @@ class ___crack___:
             ___useragent = open('Data/ua.txt', 'r').read()
         except (IOError):
             ___useragent = ('Instagram 141.0.0.17.118 Android (29/10; 450dpi; 1080x2192; samsung; SM-G986U; y2q; qcom; en_US; 213368022)')  
-            requests.get = ('Mozilla/5.0 (Linux; Android 10; STK-LX3 Build/HONORSTK-LX3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.71 Mobile Safari/537.36 Instagram 244.1.0.19.110 Android (29/10; 408dpi; 1080x2224; HUAWEI/HONOR; STK-LX3; HWSTK-HF; kirin710; es_MX; 384108444)')
+            ___useragent = requests.get('Mozilla/5.0 (Linux; Android 10; HRY-LX2 Build/HONORHRY-LX2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.129 Mobile Safari/537.36 Instagram 245.0.0.18.108 Android (29/10; 480dpi; 1080x2259; HUAWEI/HONOR; HRY-LX2; HWHRY-H; kirin710; es_MX; 385416046)')
         try:
             for pw in pwx:
                 pw = pw.lower()
