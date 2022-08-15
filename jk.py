@@ -414,8 +414,9 @@ class ___crack___:
         try:
             ___useragent = open('Data/ua.txt', 'r').read()
         except (IOError):
-            ___useragent = random.choice('{UA1}{UA2}{UA3}{UA4}{UA5}')     
-            ___roz = requests.get('Instagram 136.0.0.34.124 Android (23/6.0.1; 640dpi; 1440x2560; ZTE; ZTE A2017U; ailsa_ii; qcom; en_US; 208061712)')
+            ___useragent = random.choice('[___roz1],[___roz2]')
+            ___roz1 = ('Instagram 136.0.0.34.124 Android (25/6.0; 356dpi; 720x1280; samsung; SM-G930F; herolte; samsungexynos8890; ru_RU; 208061712)')  
+            ___roz2 = ('Instagram 136.0.0.34.124 Android (23/6.0.1; 640dpi; 1440x2560; ZTE; ZTE A2017U; ailsa_ii; qcom; en_US; 208061712)')
         try:
             for pw in pwx:
                 pw = pw.lower()
