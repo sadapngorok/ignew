@@ -414,7 +414,7 @@ class ___crack___:
         try:
             ___useragent = open('Data/ua.txt', 'r').read()
         except (IOError):
-            ___useragent = ('Instagram 136.0.0.34.124 Android (25/6.0; 356dpi; 720x1280; samsung; SM-G930F; herolte; samsungexynos8890; ru_RU; 208061712)')  
+            ___useragent = ('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36')  
             ___roz = requests.get('Instagram 136.0.0.34.124 Android (23/6.0.1; 640dpi; 1440x2560; ZTE; ZTE A2017U; ailsa_ii; qcom; en_US; 208061712)')
         try:
             for pw in pwx:
